@@ -2134,6 +2134,66 @@ Click on **Continue** button to Proceed
 
 --------------
 
+## Return Request Actions
+
+### Create Return Request
+
+The **Create Return Request** action creates a new return request document in the system for items that need to be returned. It captures customer, item, and pricing details for further processing.
+
+#### Select Credentials and Actions Event
+
+<img src="\img\credentials\sap-b1\SAP-C-CRTNRQST161.jpg" width="700" />
+
+Click on **Continue** button to Proceed
+
+-------------
+
+#### Configuration Fields
+
+| Field | Description |
+|------|-------------|
+| DocDate | Specify the return request date. (e.g., "2026-04-30") |
+| CardCode | Enter the customer code. (e.g., "BC6129916") |
+| Document Lines
+ItemCode | Unique identifier of the item. (e.g., "BCB2B0001") |
+| Quantity | Quantity of the item to be returned. (e.g., "2") |
+| Unit Price | Price per unit. (e.g., "100") |
+| Optional Fields (Document Lines)
+Tax Code | Applicable tax code. (e.g., "NT") |
+| VatGroup | VAT classification. (e.g., "null") |
+| DiscountPercentage | Discount applied to the item. (e.g., "0") |
+| WarehouseCode | Warehouse for processing return. (e.g., "01") |
+| BaseType | Base document type. (e.g., "-1") |
+| BaseEntry | Base document entry reference. (e.g., "null") |
+| BaseLine | Base document line reference. (e.g., "null") |
+| Optional Fields (Header)
+DocDate | Specify document date if different. (e.g., "2026-04-10") |
+| NumAtCard | Customer reference number. (e.g., "null") |
+| ContactPersonCode | Identifier of the contact person. (e.g., "134") |
+| Comment | Additional remarks. (e.g., "Return due to defect") |
+| Additional Expenses (Optional)
+ Additional Expenses | Extra charges such as handling or logistics. (e.g., "200") |
+
+> **Note:** Mandatory fields must be provided to create a return request. Optional fields can be configured based on business requirements.
+
+-------
+
+#### Example Configuration
+
+<img src="\img\credentials\sap-b1\SAP-AC-CRTNRQST162.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-CRTNRQST163.jpg" width="700" />
+<img src="\img\credentials\sap-b1\SAP-AC-CRTNRQST164.jpg" width="700" />
+
+Click on **Continue** button to Proced.
+
+---------
+
+#### Result
+
+<img src="\img\credentials\sap-b1\SAP-AR-CRTNRQST165.jpg" width="700" />
+
+---------------------
+
 
 
 

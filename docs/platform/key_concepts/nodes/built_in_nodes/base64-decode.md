@@ -31,11 +31,11 @@ Select the type of file you want to decode.
 
 
 4. In the Base64 String field, enter or map the Base64-encoded string of the PDF you want to decode.
-<img src="\img\platform\key-concepts\nodes\built-in\base64-decode\continue.jpg" alt="continue" width="700"/>
+<img src="\img\platform\key-concepts\nodes\built-in\base64-decode\Continue1.png" alt="continue" width="700"/>
 
 5. Click **Continue**, then run the node to decode the data.
 
-6. After execution, the decoded PDF will be available as output for the next node in your workflow.
+6. After execution, the decoded PDF will be available as output for the next node in the workflow.
 ```json
 [
 	{
@@ -58,7 +58,8 @@ The Base64 node currently supports only the PDF files that are **NOT** protected
 
 :::
 
-#### Example Input
+#### Example 
+#### Input
 
 Use a valid Base64 string for the selected PDF file type (sample shown below).
 
@@ -71,6 +72,8 @@ Provide the Base64-encoded string of the selected PDF in the **Base64 String** f
 <img src="\img\platform\key-concepts\nodes\built-in\base64-decode\continue.jpg" alt="pdf configuration" width="700" />
 
 #### Output
+
+The output displays the extracted PDF content in a structured response, which you can map to the next node.
 
 <img src="\img\platform\key-concepts\nodes\built-in\base64-decode\PDF-Output.jpg" alt="output" width="700"/>
 
@@ -90,7 +93,7 @@ Provide the Base64-encoded string of the selected PDF in the **Base64 String** f
 
 5. Click **Continue**, then run the node to decode the data.
 
-6. After execution, the decoded image will be available as output for the next node in your workflow.
+6. After execution, the decoded image will be available as output for the next node in the workflow.
 ```json
 [
 	{
@@ -123,6 +126,9 @@ Provide the Base64-encoded string of the selected image in the **Base64 String**
 <img src="\img\platform\key-concepts\nodes\built-in\base64-decode\ExampleConfig.jpg" width="700" />
 
 #### Output
+
+The output displays the decoded image text/content in JSON format, which you can map to the next node.
+
 <img src="\img\platform\key-concepts\nodes\built-in\base64-decode\Base64N-Result6.jpg" width="700" />
 
 </TabItem>

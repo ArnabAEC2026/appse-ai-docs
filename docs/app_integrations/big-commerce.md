@@ -556,7 +556,7 @@ First Name | Recipient first name. (e.g., "Mehatha") |
 
 Click on **Continue**, then **Run** node
 
--------------------------
+----------------------------
 
 #### Example Configuration
 
@@ -564,7 +564,7 @@ Click on **Continue**, then **Run** node
 <img src="\img\credentials\big-commerce\AC-CRTNWCSTMR13.jpg" width="700" />
 <img src="\img\credentials\big-commerce\AC-CRTNWCSTMR14.jpg" width="700" />
 
------------------------
+-------------------------
 
 #### Result
 
@@ -628,7 +628,7 @@ Click on **Continue**, then **Run** node
 
 **Update an Existing Customer** action is used to modify an existing customer record in Shopify with updated contact details, company information, and tax settings.
 
-#### Select Credentials and Action Events
+#### Select Credentials and Action Event
 <img src="\img\credentials\big-commerce\C-UPDTCUSTMR15.jpg" width="700" />
 
 Click on **Continue** button.

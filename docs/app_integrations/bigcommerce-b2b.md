@@ -106,64 +106,63 @@ Once both **Store Hash** and **API Token** are entered into the credential form,
 
 ### Triggers and Actions
 
+## BigCommerce B2B Integration
+
+### Overview
+This file documents all available actions and triggers for integrating with BigCommerce B2B platform, enabling automation and seamless data synchronization between systems.
+
+### Triggers
+- **Order Created**: Initiates workflow when a new B2B order is placed
+- **Order Updated**: Activates workflow when an existing order is modified
+- **Customer Created**: Triggers workflow when a new B2B customer account is registered
+- **Customer Updated**: Initiates workflow when customer information is changed
+- **Product Updated**: Activates workflow when product details or inventory changes
+
+### Actions
+- **Create Order**: Generates a new B2B order in BigCommerce
+- **Update Order**: Modifies existing order details or status
+- **Create Customer**: Registers a new B2B customer account
+- **Update Customer**: Modifies customer profile information
+- **Get Products**: Retrieves product catalog and details
+- **Update Inventory**: Syncs product stock levels
 Here is a list of all the actions and triggers available for BigCommerce B2B:
 
 ---
 
-## Triggers
+### New Companies Created
 
-- **On New Company Created** — Triggers when a new company record is created.
-- **On New User Created** — Triggers when a new user is created.
-- **On New B2B Order Created** — Triggers when a new B2B order is placed.
-- **On New Quote (RFQ) Created** — Triggers when a new request for quote is created.
+**New Companies Created** trigger is used to fetch newly created company records from Shopify based on a specified time and limit.
 
----
+#### Select Credentials and Action Events
+<img src="" width="700" />
 
-## Actions
+Click on **Continue** button.
 
-> **Company Actions**
+---------------------------
 
-- **Create Company** — Create a new company record.
-- **Get Company by ID** — Retrieve a company using its unique identifier.
-- **Update Company** — Update details of an existing company.
+#### Configuration
 
----
+| Field | Description |
+|------|-------------|
+| Fetch Data Since | Specify the date and time to fetch new company records. (e.g., "01/04/2024 05:58") |
+| Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
-> **User Actions**
+> **Note:** Fetch Data Since is mandatory. Limit can be adjusted based on how many records you want to retrieve.
 
-- **Create User** — Create a new user record.
-- **Get User by ID** — Retrieve a user using their unique identifier.
-- **Get User by Email** — Retrieve a user using their email address.
-- **Get Company Users** — Retrieve all users associated with a specific company.
-- **Update User** — Update details of an existing user.
+Click on **Continue**, then **Run** node.
 
----
+-------------------------
 
-> **RFQ Actions**
+#### Example Configuration
+<img src="" width="700" />
+<img src="" width="700" />
 
-- **Get Quote by ID** — Retrieve a quote using its unique identifier.
+-------------------------
 
----
+#### Result
 
-> **Order Actions**
+```json
 
-- **Get Order by BC Order ID** — Retrieve an order using its BigCommerce order ID.
-
----
-
-> **Invoice Actions**
-
-- **Create Invoice** — Create a new invoice record.
-
----
-
-> **Company Address Actions**
-
-- **Get Company Addresses** — Retrieve all addresses associated with a company.
-- **Create Company Address** — Create a new address for a company.
-- **Update Company Address** — Update an existing company address.
-
----
 
 ## Support
 

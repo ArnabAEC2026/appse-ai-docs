@@ -468,7 +468,7 @@ Click on **Continue**, then **Run** node
       "form_fields": []
     },
     "fees": {
-      "url": "https://api.bigcommerce.com/stores/cy2kzz9y6w/v2/orders/463/fees",
+      "url": "https://api.bigcommerce.com/stores/{STORE_HASH}/v2/orders/463/fees",
       "resource": "/orders/463/fees"
     },
     "is_email_opt_in": false,
@@ -477,19 +477,19 @@ Click on **Continue**, then **Run** node
     "channel_id": 1,
     "external_source": null,
     "consignments": {
-      "url": "https://api.bigcommerce.com/stores/cy2kzz9y6w/v2/orders/463/consignments",
+      "url": "https://api.bigcommerce.com/stores/{STORE_HASH}/v2/orders/463/consignments",
       "resource": "/orders/463/consignments"
     },
     "products": {
-      "url": "https://api.bigcommerce.com/stores/cy2kzz9y6w/v2/orders/463/products",
+      "url": "https://api.bigcommerce.com/stores/{STORE_HASH}/v2/orders/463/products",
       "resource": "/orders/463/products"
     },
     "shipping_addresses": {
-      "url": "https://api.bigcommerce.com/stores/cy2kzz9y6w/v2/orders/463/shipping_addresses",
+      "url": "https://api.bigcommerce.com/stores/{STORE_HASH}/v2/orders/463/shipping_addresses",
       "resource": "/orders/463/shipping_addresses"
     },
     "coupons": {
-      "url": "https://api.bigcommerce.com/stores/cy2kzz9y6w/v2/orders/463/coupons",
+      "url": "https://api.bigcommerce.com/stores/{STORE_HASH}/v2/orders/463/coupons",
       "resource": "/orders/463/coupons"
     },
     "external_id": null,
@@ -966,6 +966,8 @@ Click on **Continue**, then **Run** node.
 ```
 
 </div>
+
+## Product Action
 
 ### Create a New Product
 

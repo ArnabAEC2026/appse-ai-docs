@@ -27,7 +27,6 @@ You'll be asked to fill in the following details:
 | Organisation ID    | Your Zoho POS Organisation ID                                                |
 | Data Center        | The Zoho data center region for your account (e.g., US, IN)                  |
 
----
 
 ### Step-by-Step Guide
 
@@ -51,12 +50,9 @@ Go to the [Zoho Developer Console](https://api-console.zoho.com) and sign in wit
 
 Click **Add Client** and select **Server-based Application** as the client type. Fill in the required application details. Upon creation, your **Client ID** and **Client Secret** will be generated and displayed on the application details page. Copy both values.
 
-<img src="/img/credentials/zohopos/click-client-secret.png" alt="appse ai Zoho POS Client Credentials" width="700"/>
+<img src="/img/credentials/zohopos/click-client-secret.png" alt="appse ai Zoho POS Client Details" width="700"/>
 
-<img src="/img/credentials/zohopos/copy-client-id-client-secret-zohopos.png" alt="appse ai Zoho POS Refresh Token" width="700"/>
-
-
-
+<img src="/img/credentials/zohopos/copy-client-id-client-secret-zohopos.png" alt="appse ai Zoho POS Client Credentials" width="700"/>
 
 #### 4. Paste Your Credentials in appse ai
 
@@ -68,7 +64,7 @@ Return to the appse ai credential form. Fill in all the required fields — **Cl
 
 :::warning
 
-Keep your credentials secure. Do not share your Client Secret  publicly. If you believe your credentials have been compromised, revoke access from the Zoho Developer Console immediately and generate new tokens.
+Keep your credentials secure. Do not share your Client Secret publicly. If you believe your credentials have been compromised, revoke access from the Zoho Developer Console immediately and generate new tokens.
 
 :::
 
@@ -82,103 +78,117 @@ Here is a list of the available actions for Zoho POS:
 
 #### Bills
 
-- **Create Bill** — Creates a new bill in Zoho POS against a vendor. Requires vendor details, line item information, and the billing date to generate the bill record.
+| Action | Description |
+| ------ | ----------- |
+| **Create Bill** | Creates a new bill in Zoho POS against a vendor. Requires vendor details, line item information, and the billing date to generate the bill record. |
+| **Update Bill** | Updates the details of an existing bill record. Requires the **Bill ID** of the record to be modified along with the fields that are to be updated. |
 
-- **Update Bill** — Updates the details of an existing bill record. Requires the **Bill ID** of the record to be modified along with the fields that are to be updated.
 
----
 
 #### Contacts
 
-- **Create Contact** — Creates a new contact record in Zoho POS. Requires essential contact information such as the contact name, contact type, and associated billing or shipping address details.
+| Action | Description |
+| ------ | ----------- |
+| **Create Contact** | Creates a new contact record in Zoho POS. Requires essential contact information such as the contact name, contact type, and associated billing or shipping address details. |
+| **Create Contact Person** | Creates a new contact person and associates them with an existing contact record. Requires the **Contact ID** of the parent contact along with the contact person's details such as name, email address, and phone number. |
+| **List Contacts** | Retrieves a list of all contact records available in your Zoho POS organisation. Supports optional filters such as contact type and search keywords to refine the results. |
+| **Update Contact** | Updates the details of an existing contact record. Requires the **Contact ID** of the record to be modified along with the fields that are to be updated. |
+| **Update Contact Person** | Updates the details of an existing contact person associated with a contact. Requires both the **Contact ID** and the **Contact Person ID**, along with the fields that are to be updated. |
 
-- **Create Contact Person** — Creates a new contact person and associates them with an existing contact record. Requires the **Contact ID** of the parent contact along with the contact person's details such as name, email address, and phone number.
 
-- **List Contacts** — Retrieves a list of all contact records available in your Zoho POS organisation. Supports optional filters such as contact type and search keywords to refine the results.
-
-- **Update Contact** — Updates the details of an existing contact record. Requires the **Contact ID** of the record to be modified along with the fields that are to be updated.
-
-- **Update Contact Person** — Updates the details of an existing contact person associated with a contact. Requires both the **Contact ID** and the **Contact Person ID**, along with the fields that are to be updated.
-
----
 
 #### Invoices
 
-- **Create New Invoice** — Creates a new sales invoice in Zoho POS. Requires customer details, line item information, and the invoice date. Additional fields such as payment terms and custom fields may also be specified.
+| Action | Description |
+| ------ | ----------- |
+| **Create New Invoice** | Creates a new sales invoice in Zoho POS. Requires customer details, line item information, and the invoice date. Additional fields such as payment terms and custom fields may also be specified. |
+| **Update Invoice** | Updates the details of an existing invoice record. Requires the **Invoice ID** of the record to be modified along with the fields that are to be updated. |
 
-- **Update Invoice** — Updates the details of an existing invoice record. Requires the **Invoice ID** of the record to be modified along with the fields that are to be updated.
 
----
 
 #### Items
 
-- **Create Item** — Creates a new item (product or service) in the Zoho POS item catalogue. Requires the item name, item type, rate, and applicable tax information.
+| Action | Description |
+| ------ | ----------- |
+| **Create Item** | Creates a new item (product or service) in the Zoho POS item catalogue. Requires the item name, item type, rate, and applicable tax information. |
+| **List Items** | Retrieves a list of all item records available in your Zoho POS organisation. Supports optional filters such as item type, search keywords, and category to refine the results. |
+| **Update Item** | Updates the details of an existing item record. Requires the **Item ID** of the record to be modified along with the fields that are to be updated. |
 
-- **List Items** — Retrieves a list of all item records available in your Zoho POS organisation. Supports optional filters such as item type, search keywords, and category to refine the results.
 
-- **Update Item** — Updates the details of an existing item record. Requires the **Item ID** of the record to be modified along with the fields that are to be updated.
-
----
 
 #### Packages
 
-- **Create Package** — Creates a new package associated with a sales order. Requires the **Sales Order ID** and the line items to be included in the package, along with the relevant shipment details.
+| Action | Description |
+| ------ | ----------- |
+| **Create Package** | Creates a new package associated with a sales order. Requires the **Sales Order ID** and the line items to be included in the package, along with the relevant shipment details. |
 
----
+
 
 #### Pricebooks
 
-- **Create Pricebook** — Creates a new pricebook in Zoho POS to define custom pricing for items. Requires the pricebook name, currency, and the pricing rules to be applied.
+| Action | Description |
+| ------ | ----------- |
+| **Create Pricebook** | Creates a new pricebook in Zoho POS to define custom pricing for items. Requires the pricebook name, currency, and the pricing rules to be applied. |
 
----
+
 
 #### Purchase Orders
 
-- **Create Purchase Order** — Creates a new purchase order in Zoho POS to be issued to a vendor. Requires vendor details, line item information, and the expected delivery date.
+| Action | Description |
+| ------ | ----------- |
+| **Create Purchase Order** | Creates a new purchase order in Zoho POS to be issued to a vendor. Requires vendor details, line item information, and the expected delivery date. |
+| **Update Purchase Order** | Updates the details of an existing purchase order. Requires the **Purchase Order ID** of the record to be modified along with the fields that are to be updated. |
 
-- **Update Purchase Order** — Updates the details of an existing purchase order. Requires the **Purchase Order ID** of the record to be modified along with the fields that are to be updated.
 
----
 
 #### Sales Orders
 
-- **Create Sales Order** — Creates a new sales order in Zoho POS. Requires customer details, line item information, and the order date. The sales order serves as the foundation for subsequent invoicing, packaging, and shipment workflows.
+| Action | Description |
+| ------ | ----------- |
+| **Create Sales Order** | Creates a new sales order in Zoho POS. Requires customer details, line item information, and the order date. The sales order serves as the foundation for subsequent invoicing, packaging, and shipment workflows. |
+| **Update Sales Order** | Updates the details of an existing sales order. Requires the **Sales Order ID** of the record to be modified along with the fields that are to be updated. |
 
-- **Update Sales Order** — Updates the details of an existing sales order. Requires the **Sales Order ID** of the record to be modified along with the fields that are to be updated.
 
----
 
 #### Shipment Orders
 
-- **Create Shipment Order** — Creates a new shipment order associated with an existing package or sales order. Requires the relevant **Package ID** or **Sales Order ID**, along with carrier and tracking details.
+| Action | Description |
+| ------ | ----------- |
+| **Create Shipment Order** | Creates a new shipment order associated with an existing package or sales order. Requires the relevant **Package ID** or **Sales Order ID**, along with carrier and tracking details. |
 
----
+
 
 #### Transfer Orders
 
-- **Create Transfer Order** — Creates a new transfer order to move stock between locations or warehouses within your Zoho POS organisation. Requires the source location, destination location, and the line items to be transferred.
+| Action | Description |
+| ------ | ----------- |
+| **Create Transfer Order** | Creates a new transfer order to move stock between locations or warehouses within your Zoho POS organisation. Requires the source location, destination location, and the line items to be transferred. |
 
----
+
 
 #### Warehouses
 
-- **Create Warehouse** — Creates a new warehouse record within your Zoho POS organisation. Requires the warehouse name, address, and the responsible contact details.
+| Action | Description |
+| ------ | ----------- |
+| **Create Warehouse** | Creates a new warehouse record within your Zoho POS organisation. Requires the warehouse name, address, and the responsible contact details. |
+| **List Warehouses** | Retrieves a list of all warehouse records available in your Zoho POS organisation. |
 
-- **List Warehouses** — Retrieves a list of all warehouse records available in your Zoho POS organisation.
-
----
 
 #### Organisation
 
-- **Get Organisation by ID** — Retrieves the details of a specific Zoho POS organisation. Requires the **Organisation ID** and returns information such as the organisation name, currency, time zone, and fiscal year settings.
+| Action | Description |
+| ------ | ----------- |
+| **Get Organisation by ID** | Retrieves the details of a specific Zoho POS organisation. Requires the **Organisation ID** and returns information such as the organisation name, currency, time zone, and fiscal year settings. |
 
----
+
 
 #### Search
 
-- **Search Records** — A generic search action that enables you to query and retrieve records across multiple modules within Zoho POS, including Contacts, Items, Invoices, Sales Orders, Purchase Orders, and more. Requires the selection of a **Module** and a **Search Criteria** to filter and return the relevant records. This action serves as a unified alternative to individual listing actions across all supported modules.
+| Action | Description |
+| ------ | ----------- |
+| **Search Records** | A generic search action that enables you to query and retrieve records across multiple modules within Zoho POS, including Contacts, Items, Invoices, Sales Orders, Purchase Orders, and more. Requires the selection of a **Module** and a **Search Criteria** to filter and return the relevant records. This action serves as a unified alternative to individual listing actions across all supported modules. |
 
----
+
 
 ## Support
 

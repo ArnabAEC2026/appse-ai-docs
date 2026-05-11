@@ -6,7 +6,7 @@ title: AI Processor Node
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The **AI Processor Node** is a built-in node that enables you to process data using AI models such as Google Gemini, OpenAI, and Anthropic Claude.
+The **AI Processor Node** is a built-in node that enables you to process data using AI models such as OpenAI and Anthropic Claude.
 
 It allows you to generate, transform, and structure responses using prompts, system instructions, and optional configurations like temperature and structured output format.
 
@@ -60,7 +60,6 @@ In this step, select the AI provider, model, and credential type.
 
 Select the AI provider:
 
-- Google Gemini  
 - OpenAI  
 - Anthropic Claude  
 
@@ -94,27 +93,11 @@ Select one of the following models:
 
 </TabItem>
 
-<TabItem value="gemini" label="Google Gemini">
-
-Select one of the following models:
-
-- Gemini 2.5 Flash  
-- Gemini 2.5 Pro  
-- Gemini 3 Flash (Preview)  
-
-<img
-  src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-llm-gemini-model.png"
-  alt="Google Gemini model selection"
-  width="700"
-/>
-
-</TabItem>
-
 <TabItem value="claude" label="Anthropic Claude">
 
 Select one of the following models:
 
-- Claude Haiku  4.5 
+- Claude Haiku 4.5 
 - Claude Sonnet 4.6
 - Claude Opus 4.6 
 
@@ -176,13 +159,11 @@ You can select an existing credential or create a new one
 #### Create a New Credential
 
 :::info
-Credentials can be created either from the **Credentials page** or directly within the node.
+Credentials can be created either from the **Credentials** page or directly within the **Node**.
 :::
 
 - Use the **Credentials page** to manage and reuse credentials across workflows  
 - Use the **Create a new credential** option in the node  
-
-Credentials created from either location will be available in the **Account** dropdown.
 ---
 1. Click on the **Account** dropdown
 
@@ -217,7 +198,9 @@ Credentials created from either location will be available in the **Account** dr
   alt="Credential save button"
   width="500"
 />
-
+:::info
+After a new credential is created, it will automatically be selected in the **Account** field.
+:::
 ---
 #### Select Existing Credential
 
@@ -225,8 +208,6 @@ If a credential already exists:
 
 - Choose the credential from the **Account** dropdown  
 - The selected credential will be used for execution  
-
-After creating a credential, it will automatically appear in the list for selection.
 ---
 </TabItem>
 
@@ -247,6 +228,7 @@ After creating a credential, it will automatically appear in the list for select
 
 </Tabs>
 
+---
 ### 4. Configure AI Prompt
 
 Move to the **Configure** step.

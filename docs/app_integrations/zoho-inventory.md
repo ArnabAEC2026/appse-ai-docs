@@ -1,9 +1,7 @@
 ---
-
 title: Zoho Inventory
 description: Step-by-step guide to set up Zoho Inventory credentials for appse ai integration
 slug: /app-integrations/zoho-inventory/
-
 ---
 
 Zoho Inventory is an inventory and order management platform that helps businesses manage items, warehouses, sales orders, purchase orders, shipments, and stock adjustments. This guide explains how to configure Zoho Inventory OAuth credentials in appse ai so your workflows can securely connect to your Zoho account.
@@ -69,7 +67,7 @@ If region URLs do not match your Zoho account data center, token exchange and AP
 
 You can also create the same credential directly while building a workflow by choosing **Create a new credential**.
 
-<img src="/img/credentials/zoho-inventory/appse-ai-cred-page.png" alt="Open appse.ai credentials page" width="700"/>
+<img src="/img/credentials/zoho-inventory/appse-ai-cred-page.png" alt="Open appse ai credentials page" width="700"/>
 
 <img src="/img/credentials/zoho-inventory/appse-ai-cred-add.png" alt="Add new Zoho Inventory credential" width="700"/>
 
@@ -86,6 +84,10 @@ In the credential form, select values for:
 Use the same region for all three fields.
 
 <img src="/img/credentials/zoho-inventory/appse-ai-cred-form-regional-urls.png" alt="Configure Zoho Inventory regional URLs" width="700"/>
+
+:::note
+Refer to the [Recommended Region Mapping](#recommended-region-mapping) table in the Setup Credential section above to find the correct URLs for your Zoho data centre.
+:::
 
 ### Step 3: Open Zoho API Console
 
@@ -141,7 +143,7 @@ Return to appse ai and paste:
 2. **Client Secret**
 3. Confirm **API Access Scope** is set to `ZohoInventory.fullaccess.all`.
 
-<img src="/img/credentials/zoho-inventory/appse-ai-cred-form-paste-cred.png" alt="Paste credentials into appse.ai form" width="700"/>
+<img src="/img/credentials/zoho-inventory/appse-ai-cred-form-paste-cred.png" alt="Paste credentials into appse ai form" width="700"/>
 
 ### Step 8: Save and Authorize
 
@@ -158,18 +160,22 @@ If successful, appse ai stores the credential and the Zoho Inventory connection 
 
 ---
 
-## Triggers and Actions
+## Triggers
 
-Once connected, you can use the following capabilities in your workflows:
+Here is the list of available triggers in WooCommerce:
 
-### Triggers
+| Trigger                  | Description                                                       |
+| ------------------------ | ----------------------------------------------------------------- |
+| **On New Item Created**  | Retrieves events when a new product is added to Zoho Inventory.   |
 
-* **On New Item Created**
+## Actions
 
-### Actions
+Here is the list of available actions in WooCommerce:
 
-* **Create new item adjustment**
-* **Create new item**
+| Action                           | Description                                                               |
+| -------------------------------- | ------------------------------------------------------------------------- |
+| **Create new item adjustment**   | Create a new inventory adjustment request in Zoho Inventory.              |
+| **Create new item**              | Create a new item in Zoho Inventory.                                      |
 
 ---
 

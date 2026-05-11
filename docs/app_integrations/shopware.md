@@ -15,7 +15,7 @@ Click on **Add credentials**, search for Shopware and select it to create a new 
 
 <img src="/img/credentials/shopware/add_credential.png" alt="Shopware Settings Menu" width="700"/>
 
-Which leads to a pop-up:
+This opens the Shopware credential form:
 
 <img src="/img/credentials/shopware/credential_form_page.png" alt="Shopware Credential Form" width="700"/>
 
@@ -32,13 +32,20 @@ Fill in the following fields:
 
 ## Step-by-Step Guide
 
-### Step 1: Determine Your Base API URL
+### Step 1: Log in and determine your Base API URL
+
+Log in to your Shopware admin dashboard.
+
+<img src="/img/credentials/shopware/login.png" alt="Shopware Account Login" width="700"/>
+
+After logging in successfully, you will see the Shopware dashboard.
+
+<img src="/img/credentials/shopware/dashboard.png" alt="Shopware admin dashboard" width="700"/>
 
 **How to find your Base API URL:**
 
-1. Log in to your Shopware admin dashboard
-2. Look at the URL in your browser's address bar (it should look like `https://yourstore.com/admin/`)
-3. Replace `admin` with `api` in the URL and add a trailing slash (`/`)
+1. Look at the URL in your browser's address bar (it should look like `https://yourstore.com/admin/`)
+2. Replace `admin` with `api` in the URL and add a trailing slash (`/`)
 
 **Example:** If your admin URL is `https://yourstore.com/admin/`, your Base API URL would be `https://yourstore.com/api/`
 
@@ -49,14 +56,6 @@ Both HTTP and HTTPS protocols are supported, but HTTPS is recommended for securi
 :::
 
 ### Step 2: Access Shopware Admin Settings
-
-Log in to your Shopware admin dashboard.
-
-<img src="/img/credentials/shopware/login.png" alt="Shopware Account Login" width="700"/>
-
-After logging in successfully, you will see the Shopware dashboard.
-
-<img src="/img/credentials/shopware/dashboard.png" alt="Shopware admin dashboard" width="700"/>
 
 Navigate to your Shopware Admin panel and go to **Settings**.
 

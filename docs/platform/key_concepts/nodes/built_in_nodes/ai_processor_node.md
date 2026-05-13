@@ -17,15 +17,18 @@ This node is commonly used for:
 - Structured output for downstream workflows
 
 ---
+
 ## Configuration Overview
 
 The AI Processor Node consists of:
 
 - **Credential Configuration**
 - **Prompt & Output Configuration**
+
 ---
+
 ## Steps to Use AI Processor Node
----
+
 ### 1. Select AI Processor Node
 
 Select **AI Processor** from the node selection screen.
@@ -43,6 +46,7 @@ Select **AI Processor** from the node selection screen.
 />
 
 ---
+
 ### 2. Configure Credentials
 
 In this step, select the AI provider, model, and credential type.
@@ -54,6 +58,7 @@ In this step, select the AI provider, model, and credential type.
 />
 
 ---
+
 #### Configure the following fields:
 
 #### **LLM Provider** *
@@ -70,6 +75,7 @@ Select the AI provider:
 />
 
 ---
+
 #### **Model** *
 
 The available models depend on the selected provider.
@@ -97,9 +103,9 @@ Select one of the following models:
 
 Select one of the following models:
 
-- Claude Haiku 4.5 
+- Claude Haiku 4.5
 - Claude Sonnet 4.6
-- Claude Opus 4.6 
+- Claude Opus 4.6
 
 <img
   src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/ai-processor-llm-claude-model.png"
@@ -112,17 +118,19 @@ Select one of the following models:
 </Tabs>
 
 ---
+
 #### Credential Usage
 
 The AI Processor Node supports two ways to execute requests based on credential configuration:
 
 - **Bring Your Own Key (BYOK)**  
-  Uses your own credential configured for the selected provider (e.g., OpenAI, Gemini, Claude)
+  Uses your own credential configured for the selected provider (e.g., OpenAI, Claude)
 
 - **Platform-Managed Credential**  
   Uses appse ai-managed credentials without requiring user-provided API keys
 
 ---
+
 #### How to Select Credential Mode
 
 The mode is controlled using the **BYOK toggle** in the Credential configuration step:
@@ -131,6 +139,7 @@ The mode is controlled using the **BYOK toggle** in the Credential configuration
 - **BYOK OFF** → Uses platform-managed credential  
 
 ---
+
 ### 3. BYOK (Bring Your Own Key)
 
 <Tabs>
@@ -146,6 +155,7 @@ The mode is controlled using the **BYOK toggle** in the Credential configuration
 />
 
 ---
+
 #### **Account** *
 
 - Required only when **BYOK is enabled**
@@ -155,7 +165,9 @@ The mode is controlled using the **BYOK toggle** in the Credential configuration
 :::info
 You can select an existing credential or create a new one
 :::
+
 ---
+
 #### Create a New Credential
 
 :::info
@@ -164,7 +176,9 @@ Credentials can be created either from the **Credentials** page or directly with
 
 - Use the **Credentials page** to manage and reuse credentials across workflows  
 - Use the **Create a new credential** option in the node  
+
 ---
+
 1. Click on the **Account** dropdown
 
 <img
@@ -198,17 +212,22 @@ Credentials can be created either from the **Credentials** page or directly with
   alt="Credential save button"
   width="500"
 />
+
 :::info
 After a new credential is created, it will automatically be selected in the **Account** field.
 :::
+
 ---
+
 #### Select Existing Credential
 
 If a credential already exists:
 
 - Choose the credential from the **Account** dropdown  
-- The selected credential will be used for execution  
+- The selected credential will be used for execution
+
 ---
+
 </TabItem>
 
 <TabItem value="byok-off" label="BYOK OFF">
@@ -229,6 +248,7 @@ If a credential already exists:
 </Tabs>
 
 ---
+
 ### 4. Configure AI Prompt
 
 Move to the **Configure** step.
@@ -240,6 +260,7 @@ Move to the **Configure** step.
 />
 
 ---
+
 #### **Message** *
 
 The main prompt sent to the AI model.
@@ -264,6 +285,7 @@ Tasks:
 3. Suggest category
 4. Provide improvements
 ```
+
 <img
   src="/img/platform/key-concepts/nodes/built-in/ai_processor_node/prompt-configuration-field.png"
   alt="Prompt configuration field"
@@ -271,7 +293,8 @@ Tasks:
 />
 
 ---
-#### **Optional Fields Note**
+
+#### Optional Fields
 
 Click on **Optionals** if Optional fields are required
 
@@ -299,8 +322,10 @@ You may:
 
 If not provided:
 - Default model behavior will be used  
-- Output will be unstructured unless a schema is defined  
+- Output will be unstructured unless a schema is defined
+
 ---
+
 #### **System Message (Optional)**
 
 Defines AI behavior.
@@ -324,7 +349,9 @@ Controls the randomness and creativity of the AI response.
 :::info
 If not specified, the default value (`0.7`) is used.
 :::
---- 
+
+---
+
 #### **Structured Response Format (Optional)**
 
 Define a JSON schema to enforce structured output.
@@ -335,7 +362,7 @@ You can either:
 
 #### Example
 
-```JSON
+```json
 {
   "type": "object",
   "properties": {
@@ -348,6 +375,7 @@ You can either:
   }
 }
 ```
+
 :::info
 If schema is invalid, the response may not follow the expected format.
 :::
@@ -358,7 +386,8 @@ If schema is invalid, the response may not follow the expected format.
   width="700"
 />
 
---- 
+---
+
 ### 5. Execute the Node
 
 Click **Continue**, then **Run** to execute.
@@ -376,6 +405,7 @@ Click **Continue**, then **Run** to execute.
 />
 
 ---
+
 ### 6. Output
 
 After execution:
@@ -454,6 +484,7 @@ After execution:
 />
 
 ---
+
 ### Key Features
 - Multi-provider AI support
 - BYOK and appse ai-managed credentials
@@ -461,9 +492,12 @@ After execution:
 - System-level AI behavior control
 - Structured JSON output support
 - Seamless workflow integration
+
 ---
+
 ### Notes
 - Use System Message to guide AI behavior
 - Use JSON Schema for structured outputs
 - Ensure valid credentials when BYOK is ON
+
 ---

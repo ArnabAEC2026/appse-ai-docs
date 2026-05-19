@@ -1,6 +1,6 @@
 ﻿---
 title: "SAP Business One"
-slug : /app-integrations/sap-b1
+slug: /app-integrations/sap-b1
 description: Step-by-step guide to set up SAP Business One credentials and automate business workflows in appse ai.
 ---
 
@@ -4931,7 +4931,7 @@ Click on the **Continue** button, then **Run** node
 ]
 ```
 
-## Need Help?
+## Support
 
 If you are unsure about any field or face connection issues, reach out to our support team at [hello@appse.ai](mailto:hello@appse.ai)
 

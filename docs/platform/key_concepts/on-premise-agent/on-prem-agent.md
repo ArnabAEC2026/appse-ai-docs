@@ -32,7 +32,7 @@ Before creating an On-Prem Agent, ensure that:
 - Log in to the appse ai portal
 - Click **On-Site Connector** from the left navigation menu
 
-<img src="/img/platform/key-concepts/key-concepts/on-premise-agent/navigate-on-site-connector.png" alt="Navigate to On-Site Connector" width="700"/>
+<img src="/img/platform/key-concepts/on-premise-agent/navigate-on-site-connector.png" alt="Navigate to On-Site Connector" width="700"/>
 
 ---
 

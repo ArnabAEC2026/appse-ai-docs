@@ -40,7 +40,7 @@ Fill in the following required fields once the agent is selected:
 
 - After all required fields are filled, click Save to store the credential.
 - If the connection is valid, the credential will be saved and displayed with a green tick
-- User will able to use the credential in workflows as per need.
+- Users will be able to use the credential in workflows as needed.
 
 ## More Details
 
@@ -49,32 +49,32 @@ Fill in the following required fields once the agent is selected:
 - The hostname or IP of the machine running the SAP Business One server components.
 - Navigate to choose company, select your company and find the SAP Server Address in the Current Server section. Example: `sapserver.company.local` or `192.0.2.10`.
 
-<img src="\img\credentials\sap-business-one-dis\serveraddress.png" alt="find server address" width="700"/>
+<img src="/img/credentials/sap-business-one-dis/serveraddress.png" alt="find server address" width="700"/>
 
 ### Company Database
 
 - The company database in your DBMS (for example, `SBODemoUS`).
 - Navigate to choose company, select your company and find Company Database in the Database section.
 
-<img src="\img\credentials\sap-business-one-dis\database.png" alt="find company database" width="700"/>
+<img src="/img/credentials/sap-business-one-dis/database.png" alt="find company database" width="700"/>
 
 ### Username
 
 - This is the SAP Business One user account with access to the target company.
 
-<img src="\img\credentials\sap-business-one-dis\username.png" alt="username" width="700"/>
+<img src="/img/credentials/sap-business-one-dis/username.png" alt="username" width="700"/>
 
 ### Password
 
 - The password for the SAP Business One user account used.
 
-<img src="\img\credentials\sap-business-one-dis\password.png" alt="password" width="700"/>
+<img src="/img/credentials/sap-business-one-dis/password.png" alt="password" width="700"/>
 
 ### License Server
 
 - The address (and port) of the SAP License Server that issue licenses to SAP Business One clients. Confirm this by respective SAP admin.
 
-<img src="\img\credentials\sap-business-one-dis\serveraddress.png" alt="licenseserver" width="700"/>
+<img src="/img/credentials/sap-business-one-dis/serveraddress.png" alt="licenseserver" width="700"/>
 
 ### Database Type
 
@@ -84,7 +84,7 @@ Fill in the following required fields once the agent is selected:
 
 `Microsoft SQL (Legacy)`,`Microsoft SQL 2012`,`Microsoft SQL 2014`,`Microsoft SQL 2016`,`Microsoft SQL 2017`,`Microsoft SQL 2019`,`SAP HANA`
 
-<img src="\img\credentials\sap-business-one-dis\databasetype.png" alt="licenseserver" width="700"/>
+<img src="/img/credentials/sap-business-one-dis/databasetype.png" alt="databasetype" width="700"/>
 
 ## Actions
 
@@ -112,11 +112,13 @@ The SAP Business One DIS integration currently supports the following triggers. 
 | **New delivery notes created** | Fetches data records when new delivery notes are created. |
 | **New items created** | Fetches data records when new items are created. |
 
-:::info
 ## Troubleshoot
-If the following error is displayed for SAP DIS
 
-<img src="\img\credentials\sap-business-one-dis\quickfix.png" alt="password" width="700"/>
+If the following error is displayed for SAP DIS:
+
+:::warning
+<img src="/img/credentials/sap-business-one-dis/quickfix.png" alt="SAP DIS SM_OBS_DLL error 
+screenshot" width="700"/>
 
 Delete the file at location `C:\Windows\Temp\SM_OBS_DLL\1000120` from your local system and try again.
 :::

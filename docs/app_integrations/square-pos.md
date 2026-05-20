@@ -125,7 +125,7 @@ From the Square application's OAuth settings, copy the following values:
 - **Application ID**
 - **Application Secret**
 
-<img src="/img/credentials/square-pos/SP10.png" alt="Application credentials" width="700"/>
+<img src="/img/credentials/square-pos/SPOS10.png" alt="Application credentials" width="700"/>
 
 Keep the Application Secret secure and do not share it publicly.
 

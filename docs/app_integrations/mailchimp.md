@@ -26,9 +26,9 @@ Before setting up your Mailchimp credential in appse ai, ensure that you have ac
 
 #### 1. Log in to Mailchimp
 
-Log in to your Mailchimp account.
+- Log in to your Mailchimp account.
 
-<img src="/img/credentials/mailchimp/mailchimp-login.png" alt="Mailchimp Login" width="700"/>
+<img src="/img/credentials/mailchimp/mailchimp-login.png" alt="Mailchimp Login" width="700" height="500"/>
 
 ---
 
@@ -72,7 +72,9 @@ In the API Keys section:
 
 <img src="/img/credentials/mailchimp/mailchimp-copy-apikey.png" alt="Mailchimp copy API key screen" width="700"/>
 
-> **Note**: Store the API key securely. It provides access to your Mailchimp account APIs.
+:::info
+Store the API key securely. It provides access to your Mailchimp account APIs.
+:::
 
 ---
 

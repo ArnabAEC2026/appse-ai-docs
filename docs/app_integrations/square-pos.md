@@ -173,6 +173,8 @@ Here is the list of available actions for Square POS:
 | **List payment refunds**     | Returns a list of payment refunds for the connected merchant, with optional filters for reporting or reconciliation. |
 | **List payments**           | Returns a list of payments processed through Square, useful for syncing transactions or auditing. |
 | **Search orders**           | Searches Square orders using defined criteria to find orders for fulfillment or support. |
+| **Get order by ID**         | Retrieves a specific Square order by its unique order ID. |
+| **Get customer by ID**      | Retrieves a specific Square customer by its unique customer ID. If this field is left blank, Square does not return an error — it calls List customers and returns up to 100 customer profiles instead of a single customer. |
 | **Update customer**          | Updates an existing Square customer’s profile.           |
 | **Upsert catalog object**    | Creates a new catalog object or updates an existing one in Square (items, variations). |
 

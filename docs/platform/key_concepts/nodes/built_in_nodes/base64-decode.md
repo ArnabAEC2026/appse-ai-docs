@@ -1,13 +1,13 @@
 ---
 slug: /platform/key-concepts/nodes/built-in/base64-decode
 title: Base64 Decode
-description: Step-by-step guide to use the Base64 Decode node to convert Base64 strings into their original format in appse ai.
----
+description: Step-by-step guide to use the Base64 Decode node to convert Base64 strings into their original format in APPSeAI.
+-----------------
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The Base64 Decode node in appse ai is a built-in node that allows you to convert a Base64 string back into its original format. Many applications and APIs return files in a Base64 string format. This node helps decode that data into a text format that can be used in other nodes in your workflow.
+The Base64 Decode node in APPSeAI is a built-in node that allows you to convert a Base64 string back into its original format. Many applications and APIs return files in a Base64 string format. This node helps decode that data into a text format that can be used in other nodes in your workflow.
 
 ## How to Add the Node
 
@@ -15,12 +15,12 @@ The Base64 Decode node in appse ai is a built-in node that allows you to convert
 <img src="/img/platform/key-concepts/nodes/built-in/base64-decode/SelectBase64Node.jpg" alt="Base64 Decode node selection screen" width="700"/>
 
 2. Connect it with a node that provides a Base64 string output.
-<img  src="/img/platform/key-concepts/nodes/built-in/base64-decode/SelectdesireAPP.jpg" alt="Connecting Base64 Decode node to source node" width="700"/>
+<img src="/img/platform/key-concepts/nodes/built-in/base64-decode/SelectdesireAPP.jpg" alt="Connecting Base64 Decode node to source node" width="700"/>
 
 ## Configuration
 
 ### Steps to Use Different File Types in the Base64 Node
- 
+
 Select the type of file you want to decode.
 
 <Tabs>
@@ -31,7 +31,6 @@ Select the type of file you want to decode.
 3. Under **Type**, select the **PDF** option from the dropdown menu.
 
 <img src="/img/platform/key-concepts/nodes/built-in/base64-decode/select-type.jpg" alt="Base64 Decode file type selection dropdown" width="700"/>
-
 
 4. In the Base64 String field, enter or map the Base64-encoded string of the PDF you want to decode.
 <img src="/img/platform/key-concepts/nodes/built-in/base64-decode/Continue1.png" alt="Base64 string input field for PDF decoding" width="700"/>
@@ -61,7 +60,7 @@ The Base64 node currently supports only the PDF files that are **NOT** protected
 
 :::
 
-#### Example 
+#### Example
 
 #### Input
 
@@ -118,7 +117,6 @@ For accurate data extraction, the image should be of **high quality and clarity*
 The following is a sample PNG image that will be used as input for this example.
 
 <img src="/img/platform/key-concepts/nodes/built-in/base64-decode/Image-Input.jpg" alt="Sample PNG image for Base64 encoding example" width="700" />
-
 
 #### Output
 

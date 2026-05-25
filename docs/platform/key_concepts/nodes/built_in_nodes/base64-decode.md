@@ -1,13 +1,13 @@
 ---
 slug: /platform/key-concepts/nodes/built-in/base64-decode
 title: Base64 Decode
-description: Step-by-step guide to use the Base64 Decode node to convert Base64 strings into their original format in APPSeAI.
------------------
+description: Step-by-step guide to use the Base64 Decode node to convert Base64 strings into their original format in appse ai.
+---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-The Base64 Decode node in APPSeAI is a built-in node that allows you to convert a Base64 string back into its original format. Many applications and APIs return files in a Base64 string format. This node helps decode that data into a text format that can be used in other nodes in your workflow.
+The Base64 Decode node in appse ai is a built-in node that allows you to convert a Base64 string back into its original format. Many applications and APIs return files in a Base64 string format. This node helps decode that data into a text format that can be used in other nodes in your workflow.
 
 ## How to Add the Node
 
@@ -73,8 +73,6 @@ The following is a sample PDF that will be used as input for this example.
 The output displays the decoded PDF text/content in JSON format, which you can map to the next node.
 
 <img src="/img/platform/key-concepts/nodes/built-in/base64-decode/PDF-Output.jpg" alt="Base64 decoded PDF output in JSON format" width="700"/>
-
-----------------
 
 </TabItem>
 <TabItem value="image" label="Image">

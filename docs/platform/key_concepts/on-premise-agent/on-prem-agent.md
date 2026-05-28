@@ -1,14 +1,14 @@
 ---
-title: "On-Premise Agent Setup"
+title: "On-Prem Connector Setup"
 slug: /platform/key-concepts/on-premise-agent/on-premise-agent-setup
-description: Step-by-step guide to create, download, and install an On-Prem Agent in appse ai for securely connecting on-premise systems and applications.
+description: Step-by-step guide to create, download, and install an On-Prem Connector in appse ai for securely connecting on-premise systems and applications.
 ---
 
-## Setup and install an On-Prem Agent
+## Setup and install an On-Prem Connector
 
-The On-Prem Agent in appse ai enables secure communication between your on-premise systems and the appse ai platform.
+The On-Prem Connector in appse ai enables secure communication between your on-premise systems and the appse ai platform.
 
-With the On-Prem Agent, you can:
+With the On-Prem Connector, you can:
 
 - Securely connect on-premise applications
 - Execute workflows against on-premise environments
@@ -18,80 +18,80 @@ With the On-Prem Agent, you can:
 
 ### Prerequisites
 
-Before creating an On-Prem Agent, ensure that:
+Before creating an On-Prem Connector, ensure that:
 
 - You have access to the appse ai portal
-- Your organization has permission to create On-Prem Agents
+- Your organization has permission to create On-Prem Connectors
 - Required on-prem plugins are available for your organization
 - The target machine has internet connectivity
 
 ---
 
-### Step 1: Access the On-Site Connector
+### Step 1: Navigate to On-Prem Connectors
 
-- Log in to the appse ai portal
-- Click **On-Site Connector** from the left navigation menu
+- Click the three-dot menu from the bottom-left profile section
 
-<img src="/img/platform/key-concepts/on-premise-agent/navigate-on-site-connector.png" alt="Navigate to On-Site Connector" width="700"/>
+<img src="/img/platform/key-concepts/on-premise-agent/three-dot-menu.png" alt="Open On-Prem Connectors Menu" width="700"/>
 
----
+- Select **On-Prem Connectors**
 
-### Step 2: Open the Agent Creation Screen
-
-The **On-Prem Agents** page displays all available agents for your organization.
-
-If no agents are available, the empty state screen is displayed.
-
-- Click **Create First Agent** or **Create Agent**
-
-<img src="/img/platform/key-concepts/on-premise-agent/click-create-agent.png" alt="On-Prem Agents Page" width="700"/>
+<img src="/img/platform/key-concepts/on-premise-agent/navigate-on-prem-connectors.png" alt="Navigate to On-Prem Connectors" width="700"/>
 
 ---
 
-### Step 3: Configure the Agent
+### Step 2: Open the On-Prem Connectors Creation Screen
 
-In the **Create On-Prem Agent** popup:
+The **On-Prem Connectors** page displays all available connectors for your organization.
 
-- Enter a unique **Agent Name**
+If no connectors are available, the empty state screen is displayed.
 
-<img src="/img/platform/key-concepts/on-premise-agent/provide-agent-name.png" alt="Provide Agent Name" width="700"/>
+- Click **Create First Connector** or **Create Connector**
 
-- Click **Create Agent**
+<img src="/img/platform/key-concepts/on-premise-agent/create-on-prem-connectors.png" alt="Create On-Prem Connector" width="700"/>
 
-<img src="/img/platform/key-concepts/on-premise-agent/create-agent.png" alt="Create On-Prem Agent" width="700"/>
+---
 
-#### Required Fields
+### Step 3: Configure the On-Prem Connector
+
+In the **Create On-Prem Connector** popup:
+
+- Enter a unique **Connector Name**
+- Click **Create Connector**
+
+<img src="/img/platform/key-concepts/on-premise-agent/click-on-create-connector.png" alt="Create On-Prem Connector Popup" width="700" height="450"/>
+
+### Required Fields
 
 | Field | Description |
 |---|---|
-| Agent Name | Unique name used to identify the On-Prem Agent |
+| Connector Name | Unique name used to identify the On-Prem Connector |
 
-#### Example
+### Example
 
 ```text
-onprem-agent
+onprem-connector
 ```
 
 :::info
-All available on-prem plugins are automatically included in the generated installation bundle.
+All available on-prem plugins are automatically included in the downloaded bundle.
 :::
 
 ---
 
-### Step 4: Complete Agent Registration
+### Step 4: Complete On-Prem Connector Registration
 
 Once the agent is created successfully:
 
 - The agent is registered in your organization
 - A success confirmation popup is displayed
 
-<img src="/img/platform/key-concepts/on-premise-agent/success-pop-up.png" alt="Agent Created Successfully" width="700" height="400"/>
+<img src="/img/platform/key-concepts/on-premise-agent/on-prem-success-popup.png" alt="Connector Created Successfully" width="700" height="450"/>
 
 - Click **Done** to continue
 
 ---
 
-### Step 5: View the Created Agent
+### Step 5: View the Created On-Prem Connector
 
 After closing the popup, the newly created agent is displayed in the On-Site Connector page.
 
@@ -101,7 +101,7 @@ After closing the popup, the newly created agent is displayed in the On-Site Con
 
 ---
 
-### Step 6: Download the Agent Bundle
+### Step 6: Download the On-Prem Connector Bundle
 
 Once the agent is created, the **Download Bundle** option becomes available.
 
@@ -139,7 +139,7 @@ The ZIP package is downloaded to your local machine.
 - Choose the extraction location
 - Click **Extract**
 
-<img src="/img/platform/key-concepts/on-premise-agent/extract-file-to-destination.png" alt="Select Extraction Location" width="700"/>
+<img src="/img/platform/key-concepts/on-premise-agent/extract-file-to-destination.png" alt="Select Extraction Location" width="700" height="400"/>
 
 ---
 
@@ -226,11 +226,11 @@ After the installation is completed successfully:
 
 ---
 
-### Step 14: Verify Agent Connectivity
+### Step 14: Verify On-Prem Connector Connectivity
 
-- Return to the **On-Prem Agents** page in appse ai
+- Return to the **On-Prem Connectors** page in appse ai
 
-Once the installed agent successfully connects to the platform, the status automatically changes from **Offline** to **Online**.
+Once the installed connector successfully connects to the platform, the status automatically changes from **Offline** to **Online**.
 
 <img src="/img/platform/key-concepts/on-premise-agent/agent-online-status.png" alt="Online Agent Status" width="700"/>
 
@@ -254,15 +254,15 @@ The On-Prem Agent supports connectivity for the following applications and syste
 
 | Status | Description |
 |---|---|
-| Offline | Agent is created but not connected |
+| Offline | On-Prem Connector is created but not connected |
 | Preparing | Installation bundle is being generated |
-| Online | Agent is installed and connected successfully |
+| Online | On-Prem Connector is installed and connected successfully |
 
 ---
 
 ## Additional Information
 
-- Multiple On-Premise Agents can be created within the same organization
+- Multiple On-Prem Connectors can be created within the same organization
 - Each agent has its own downloadable installation bundle
 - Plugin dependencies are automatically included in the generated package
 

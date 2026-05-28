@@ -7,8 +7,6 @@ description: Step-by-step guide to set up BigCommerce B2B credentials and automa
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-<div class="scrollable-code">
-
 BigCommerce is a powerful e-commerce solution which also offers a dedicated B2B Edition with advanced features tailored for wholesale and business-to-business operations, enabling companies to manage complex pricing structures, customer groups, company accounts, and bulk ordering efficiently. appse ai lets you seamlessly connect with your BigCommerce B2B account to automate key processes such as order management, company management, quote synchronization, and invoice updates—helping streamline operations and enhance efficiency through intelligent, automated workflows.
 
 ---
@@ -124,16 +122,17 @@ Every application has a pre-defined set of triggers and actions that allow users
 New Companies Created trigger is used to fetch newly created company records from BigCommerce B2B based on a specified time and limit.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-NWCUSTMRCRTD1.jpg" alt="New Companies Created" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Fetch Data Since | Specify the date and time to fetch new company records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
@@ -143,12 +142,13 @@ Fetch Data Since is mandatory. Limit can be adjusted based on how many records y
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-NWCUSTMRCRTD2.jpg" alt="New Companies Created Example" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -181,23 +181,24 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
--------------------------
+---
 
 #### New Users Created
 
 New Users Created trigger is used to fetch newly created user records from BigCommerce B2B based on a specified time and limit.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-NWUSRSCRTD3.jpg" alt="New Users Created" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Fetch Data Since | Specify the date and time to fetch new user records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
@@ -207,7 +208,7 @@ Fetch Data Since is mandatory. Limit can be adjusted based on how many records y
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
 
@@ -215,7 +216,7 @@ Click on **Continue**, then **Run** node.
 The configuration fields are the same for all triggers - refer to the screenshot above.
 :::
 
--------------------------
+---
 
 ##### Result
 
@@ -245,23 +246,24 @@ The configuration fields are the same for all triggers - refer to the screenshot
   }
 ]
 ```
----------------------------
+---
 
 #### New Quotes Created
 
 New Quotes Created trigger is used to fetch newly created quote records from BigCommerce B2B based on a specified time and limit.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-NWQOTSCRTD5.jpg" alt="New Quotes Created" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Fetch Data Since | Specify the date and time to fetch new quote records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
@@ -271,7 +273,7 @@ Fetch Data Since is mandatory. Limit can be adjusted based on how many records y
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
 
@@ -279,7 +281,7 @@ Click on **Continue**, then **Run** node.
 The configuration fields are the same for all triggers - refer to the screenshot above.
 :::
 
--------------------------
+---
 
 ##### Result
 
@@ -316,23 +318,24 @@ The configuration fields are the same for all triggers - refer to the screenshot
   }
 ]
 ```
---------------------
+---
 
 #### New B2B Orders Created
 
 New B2B Orders Created trigger is used to fetch newly created B2B order records from BigCommerce B2B based on a specified time and limit.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-NWB2BORDSCRTD6.jpg" alt="New B2B Orders Created" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Fetch Data Since | Specify the date and time to fetch new B2B order records. (e.g., "01/04/2024 05:58") |
 | Limit | Define the number of records to retrieve. (e.g., "10" or "1") |
 
@@ -342,7 +345,7 @@ Fetch Data Since is mandatory. Limit can be adjusted based on how many records y
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
 
@@ -350,7 +353,7 @@ Click on **Continue**, then **Run** node.
 The configuration fields are the same for all triggers - refer to the screenshot above.
 :::
 
--------------------------
+---
 
 ##### Result
 
@@ -384,7 +387,7 @@ The configuration fields are the same for all triggers - refer to the screenshot
   }
 ]
 ```
----------------------------
+---
 
   </TabItem>
   <TabItem value="actions" label="Actions">
@@ -398,16 +401,17 @@ The configuration fields are the same for all triggers - refer to the screenshot
 Create Company action is used to create a new company in BigCommerce B2B with admin details and address information.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-CRTNWCMPNY7.jpg" alt="Create Company" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Company Name | Enter the company name. (e.g., "VentoBen") |
 | Company Phone | Enter the company contact number. (e.g., "9878987654") |
 | Company Email | Enter the company email address. (e.g., "ventoben.co@yopmail.com") |
@@ -429,13 +433,14 @@ All mandatory fields must be provided to successfully create a company. Optional
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-CRTNWCMPNY8.jpg" alt="Create Company example configuration 1" width="700" />
 <img src="/img/credentials/bigcommerce-b2b/AC-CRTNWCMPNY9.jpg" alt="Create Company example configuration 2" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -454,23 +459,24 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
-------------------------
+---
 
 #### Update Company
 
 Update Company action is used to modify an existing company’s details in BigCommerce B2B including company information and address details.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-UPDTCMPNY10.jpg" alt="Update Company" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Company Id | Enter the unique company identifier. (e.g., "12711142") |
 | State | Enter the state code. (e.g., "TS") |
 | Country | Enter the country code. (e.g., "IN") |
@@ -489,13 +495,14 @@ Company Id, State, and Country are mandatory. Only the provided optional fields 
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-UPDTCMPNY11.jpg" alt="Update Company example configuration 1" width="700" />
 <img src="/img/credentials/bigcommerce-b2b/AC-UPDTCMPNY12.jpg" alt="Update Company example configuration 2" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -512,23 +519,24 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
------------------------
+---
 
 #### Get Company by ID
 
 Get Company by ID action is used to retrieve company details in BigCommerce B2B using the unique company identifier.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-GTCMPNYbyID13.jpg" alt="Get Company by ID" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Company Id | Enter the unique company identifier. (e.g., "12711142") |
 
 :::note
@@ -537,12 +545,13 @@ Company Id is mandatory. The action returns company details for the specified co
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-GTCMPNYbyID14.jpg" alt="Get Company by ID example configuration" width="700" />
 
-------------------------
+---
 
 ##### Result
 
@@ -582,7 +591,7 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
--------------------------
+---
 
 ### User Actions
 
@@ -591,16 +600,17 @@ Click on **Continue**, then **Run** node.
 Create User action is used to create a new user associated with a company in BigCommerce B2B with role and contact details.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-CRTUSR15.jpg" alt="Create User" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | First Name | Enter the user's first name. (e.g., "Nicke") |
 | Last Name | Enter the user's last name. (e.g., "Genwell") |
 | Company Id | Enter the associated company identifier. (e.g., "12711142") |
@@ -615,12 +625,13 @@ First Name, Last Name, Company Id, Email, and Role are mandatory. Optional field
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-CRTUSR16.jpg" alt="Create User example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -638,23 +649,24 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
---------------------------
+---
 
 #### Update User
 
 Update User action is used to modify an existing user’s details in BigCommerce B2B such as name, contact information, and role.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-UPDTUSR17.jpg" alt="Update User" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | User Id (Identifier) | Enter the unique user identifier. (e.g., "18382574") |
 | Optional Fields | Additional user details that can be updated. |
 | First Name | User's first name. (e.g., "Nickee") |
@@ -669,12 +681,13 @@ User Id is mandatory. Only the provided optional fields will be updated. Role ca
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-UPDTUSR18.jpg" alt="Update User example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -712,23 +725,24 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
----------------------------
+---
 
 #### Get User by Email
 
 Get User by Email action is used to retrieve user details in BigCommerce B2B using the user's email address.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-GTUSRbyEML19.jpg" alt="Get User by Email" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Email | Enter the user email address. (e.g., "nicke.genwell@yopmail.com") |
 
 :::note
@@ -737,12 +751,13 @@ Email is mandatory. The action returns matching user details for the specified e
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-GTUSRbyEML20.jpg" alt="Get User by Email example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -772,23 +787,24 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
---------------------
+---
 
 #### Get User by ID
 
 Get User by ID action is used to retrieve user details in BigCommerce B2B using the unique user identifier.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-GTUSRbyUSRID21.jpg" alt="Get User by ID" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | User Id | Enter the unique user identifier. (e.g., "18382574") |
 
 :::note
@@ -797,12 +813,13 @@ User Id is mandatory. The action returns user details for the specified user.
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-GTUSRbyUSRID22.jpg" alt="Get User by ID example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -839,23 +856,24 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
----------------------------
+---
 
 #### Get Company Users
 
 Get Company Users action is used to retrieve all users associated with a specific company in BigCommerce B2B.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-GTCMPNYUSR23.jpg" alt="Get Company Users" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Company Id | Enter the unique company identifier. (e.g., "12711142") |
 | Optional Fields | Additional parameters to filter results. |
 | Limit | Define the number of records to retrieve. (e.g., "2") |
@@ -866,12 +884,13 @@ Company Id is mandatory. Limit can be used to restrict the number of users retur
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-GTCMPNYUSR24.jpg" alt="Get Company Users example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -923,7 +942,7 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
----------------------------
+---
 
 ### Company Address Action
 
@@ -932,16 +951,17 @@ Click on **Continue**, then **Run** node.
 Get Company Addresses action is used to retrieve all addresses associated with a specific company in BigCommerce B2B.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-GTCMPNYADDRSbyCMPNYID30.jpg" alt="Get Company Addresses" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Company Id | Enter the unique company identifier. (e.g., "12623321") |
 | Optional Fields | Additional parameters to filter results. |
 | Limit | Define the number of records to retrieve. (e.g., "50" or "1") |
@@ -952,12 +972,13 @@ Company Id is mandatory. Limit can be used to control the number of address reco
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-GTCMPNYADDRSbyCMPNYID31.jpg" alt="Get Company Addresses example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -986,7 +1007,7 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
------------------------
+---
 
 
 #### Update Company Address
@@ -994,16 +1015,17 @@ Click on **Continue**, then **Run** node.
 Update Company Address action is used to modify an existing company address in BigCommerce B2B with updated contact and location details.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-UPDTCMPNYADRS32.jpg" alt="Update Company Address" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Address Id | Enter the unique address identifier. (e.g., "35205391") |
 | Optional Fields | Additional address details that can be updated. |
 | Company Id | Enter the associated company identifier. (e.g., "12623321") |
@@ -1025,13 +1047,14 @@ Address Id is mandatory. Only the provided optional fields will be updated.
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-UPDTCMPNYADRS33.jpg" alt="Update Company Address example configuration 1" width="700" />
 <img src="/img/credentials/bigcommerce-b2b/AC-UPDTCMPNYADRS34.jpg" alt="Update Company Address example configuration 2" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -1048,7 +1071,7 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
--------------------
+---
 
 ### Order Action
 
@@ -1057,16 +1080,17 @@ Click on **Continue**, then **Run** node.
 Get Orders by BC Order Id action is used to retrieve order details in BigCommerce B2B using the BigCommerce order identifier.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-GTORDRbyBCODRID35.jpg" alt="Get Orders by BC Order Id" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | BC Order Id | Enter the BigCommerce order identifier. (e.g., "503") |
 
 :::note
@@ -1075,12 +1099,13 @@ BC Order Id is mandatory. The action returns order details mapped with the speci
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-GTORDRbyBCODRID36.jpg" alt="Get Orders by BC Order Id example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -1131,7 +1156,7 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
-----------------------
+---
 
 ### Invoice Actions
 
@@ -1140,16 +1165,17 @@ Click on **Continue**, then **Run** node.
 Create Invoice action is used to generate a new invoice for an existing order in BigCommerce B2B using the specified order ID.
 
 ##### Select Credentials and Action Events
+
 <img src="/img/credentials/bigcommerce-b2b/C-CRTINVOICE.jpg" alt="Create Invoice - Select credentials" width="700" />
 
 Click on **Continue** button.
 
----------------------------
+---
 
 ##### Configuration Fields
 
 | Field | Description |
-|------|--------------|
+|-------|-------------|
 | Order Id | Specify the unique order ID for which the invoice should be created. (e.g., `29544152`) |
 
 :::note
@@ -1158,12 +1184,13 @@ Order Id is a mandatory field and should contain a valid BigCommerce B2B order i
 
 Click on **Continue**, then **Run** node.
 
--------------------------
+---
 
 ##### Example Configuration
+
 <img src="/img/credentials/bigcommerce-b2b/AC-CRTINVOICE.jpg" alt="Create Invoice - Example configuration" width="700" />
 
--------------------------
+---
 
 ##### Result
 
@@ -1181,12 +1208,10 @@ Click on **Continue**, then **Run** node.
   }
 ]
 ```
----------------------------------------
+---
 
   </TabItem>
 </Tabs>
-
-</div>
 
 ## Support
 If you are unsure about any field or face connection issues, reach out to our support team at [hello@appse.ai](mailto:hello@appse.ai)

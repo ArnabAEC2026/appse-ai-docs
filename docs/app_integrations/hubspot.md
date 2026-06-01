@@ -1,6 +1,8 @@
 ---
 title: "HubSpot"
+description: Step-by-step guide to set up HubSpot credentials and automate CRM workflows in appse ai.
 slug: /app-integrations/hubspot/
+
 ---
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -10,8 +12,9 @@ import TabItem from '@theme/TabItem';
 <Tabs>
   <TabItem value="Public App" label="Public App (Recommended)">
 
-  > **Note for HubSpot Marketplace Users**  
-  > - Apps installed through the HubSpot Marketplace use OAuth 2.0 authentication only. Marketplace users should install and connect the app directly through the OAuth flow and should not create a Private App or manually enter API keys, access tokens, client IDs, or client secrets. 
+  :::note for HubSpot Marketplace Users
+  > - Apps installed through the HubSpot Marketplace use OAuth 2.0 authentication only. Marketplace users should install and connect the app directly through the OAuth flow and should not create a Private App or manually enter API keys, access tokens, client IDs, or client secrets.
+  :::
 
   ### Add Credential in appse ai
 
@@ -21,44 +24,44 @@ import TabItem from '@theme/TabItem';
    - Click on Add Credentials.
    - Select HubSpot from the list of available applications.
 
-   <img src="\img\credentials\hubspot\public\select_hubspot_app.png" alt="HubSpot app selection screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/select_hubspot_app.png" alt="HubSpot app selection screen" width="700"/>
 
    - Choose Authentication type Public App (Recommended).
 
-   <img src="\img\credentials\hubspot\public\select_hubspot_public_app.png" alt="HubSpot app authentication type selection screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/select_hubspot_public_app.png" alt="HubSpot app authentication type selection screen" width="700"/>
 
    - Click Save & Authorize.
 
-   <img src="\img\credentials\hubspot\public\click_save_authorize.png" alt="Save Authorize screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/click_save_authorize.png" alt="Save Authorize screen" width="700"/>
 
    - You will be redirected to the HubSpot authentication page. Click Sign in to your HubSpot account.
 
-   <img src="\img\credentials\hubspot\public\sign_in_hubspot.png" alt="HubSpot login screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/sign_in_hubspot.png" alt="HubSpot login screen" width="700"/>
 
    - Enter your HubSpot-registered email address and click Continue.
 
-   <img src="\img\credentials\hubspot\public\enter_email.png" alt="Enter email screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/enter_email.png" alt="Enter email screen" width="700"/>
 
    - Enter your password and click Sign in.
 
-   <img src="\img\credentials\hubspot\public\enter_password.png" alt="Enter Password screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/enter_password.png" alt="Enter Password screen" width="700"/>
 
    - Complete any required verification (e.g., enter the verification code) and click Continue.
 
-   <img src="\img\credentials\hubspot\public\enter_verification_code.png" alt="Verification code screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/enter_verification_code.png" alt="Verification code screen" width="700"/>
 
    - Select the HubSpot account you wish to connect and click Choose Account.
 
-   <img src="\img\credentials\hubspot\public\choose_account.png" alt="HubSpot account selection screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/choose_account.png" alt="HubSpot account selection screen" width="700"/>
 
    - Review the requested permissions and click Connect App.
 
-   <img src="\img\credentials\hubspot\public\connect_app.png" alt="Connect app screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/connect_app.png" alt="Connect app screen" width="700"/>
 
    - If HubSpot displays a warning page titled “Connecting an unverified app”, review the message shown on the screen. In the confirmation text field, type: I accept the risk. After entering the text, the Connect button will become enabled.
    - Click Connect to continue the authorization process.
 
-   <img src="\img\credentials\hubspot\public\unverified_accept_risk.png" alt="Accept risk screen" width="700"/>
+   <img src="/img/credentials/hubspot/public/unverified_accept_risk.png" alt="Accept risk screen" width="700"/>
 
    - Once connected, you will be automatically redirected back to the Appse AI platform, and the HubSpot credential will be saved successfully.
 ---

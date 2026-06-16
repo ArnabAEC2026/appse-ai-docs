@@ -8,7 +8,7 @@ Pinecone is a vector database designed for building scalable AI applications. It
 
 ## Set Up Credential
 
-:::info  
+:::note  
 To use the Pinecone API, you need a Pinecone account and an active project with an index created.  
 :::
 
@@ -30,8 +30,6 @@ Click **Select a Credential** and choose **Pinecone** from the application list.
 
 <img src="/img/credentials/pinecone/pinecone-create-new-connection.png" alt="appse ai Pinecone Select Credential" width="700"/>
 
-<br/>
-
 This opens the Pinecone credential form. Add your **Connection Name**.
 
 <img src="/img/credentials/pinecone/pinecone-connection-name.png" alt="appse ai Pinecone Connection Name" width="700"/>
@@ -49,25 +47,22 @@ Once logged in, open the [Pinecone Console](https://app.pinecone.io).
 From the left sidebar, click on **API Keys**.
 
 <img src="/img/credentials/pinecone/api-keys.png" alt="appse ai Pinecone API Keys" width="700"/>
-<br/>
 
 #### 5. Create a New API Key
 
 Click **Create API Key**, give it a name, and click **Create**.
 
 <img src="/img/credentials/pinecone/create-api-key.png" alt="appse ai Pinecone Create API Key" width="700"/>
-<br/>
 
 #### 6. Copy Your API Key
 
 Copy the API key immediately after creation.
 
-:::warning
+:::caution
 You will **not be able to see this key again** after closing the dialog. Store it somewhere safe before proceeding.
 :::
 
 <img src="/img/credentials/pinecone/copy-api-key.png" alt="appse ai Pinecone Copy API Key" width="700"/>
-<br/>
 
 #### 7. Create an Index (if not already created)
 
@@ -78,8 +73,7 @@ Go to the **Indexes** section and click **Create Index**. Provide:
 - Metric (cosine, dotproduct, euclidean)
 - Cloud and region (e.g. AWS, us-west-2)
 
-<img src="\img\credentials\pinecone\create-index.png" alt="appse ai Pinecone Create Index" width="700"/>
-<br/>
+<img src="/img/credentials/pinecone/create-index.png" alt="appse ai Pinecone Create Index" width="700"/>
 
 #### 8. Paste into appse ai
 
@@ -91,7 +85,6 @@ Return to the appse ai credential form:
 Click **Save**. Your Pinecone credential should now be connected.
 
 <img src="/img/credentials/pinecone/add-credentials.png" alt="appse ai Pinecone Add Credentials" width="700"/>
-<br/>
 
 ---
 

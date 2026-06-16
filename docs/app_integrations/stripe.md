@@ -10,7 +10,7 @@ Stripe is a global payments platform for businesses of all sizes, enabling onlin
 
 ## Set Up Credential
 
-:::info
+:::note
 
 Before you create a credential for Stripe using appse ai, ensure you have a Stripe account and have access to your API keys from the Stripe Dashboard.
 
@@ -37,7 +37,7 @@ Go to [dashboard.stripe.com](https://dashboard.stripe.com/) and sign in to your 
 
 In the Stripe Dashboard, click on **Developers** in the top navigation bar, then select **API keys** from the left sidebar. Under the **Standard keys** section, locate your **Secret key**, click **Reveal live key**, and copy it.
 
-:::warning
+:::caution
 
 Your Secret Key grants full access to your Stripe account. Never share it publicly or expose it in client-side code. Use `sk_test_` keys during development and switch to `sk_live_` keys before going to production.
 
@@ -83,4 +83,4 @@ Here is the list of available actions for Stripe:
 
 ## Support
 
-Need help? Contact our support team at [hello@appse.ai](mailto:hello@appse.ai)
+Need help? Contact our support team at [support@appse.ai](mailto:support@appse.ai)

@@ -6,6 +6,7 @@ description: Step-by-step guide to set up BigCommerce credentials and automate e
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
 
 BigCommerce is a leading e-commerce platform that helps businesses create and manage online stores. appse ai enables you to connect with your BigCommerce account, automate order processing, inventory management, and other e-commerce operations, allowing for smoother and more efficient business management through automated workflows.
 
@@ -15,8 +16,15 @@ BigCommerce is a leading e-commerce platform that helps businesses create and ma
   <TabItem value="Public App" label="Public App (Recommended)">
 
   :::note
-  Apps installed through the BigCommerce Marketplace use OAuth 2.0 authentication only. Marketplace users should install and connect the app directly through the BigCommerce OAuth flow. Users do not need to manually enter access tokens, client IDs, or client secrets. Only the Store Hash is required to identify and connect the BigCommerce store.
+  BigCommerce Marketplace installations use OAuth 2.0 authentication only. Install and connect the app directly through the OAuth flow. Only the Store Hash is required to identify and connect your BigCommerce store.
   :::
+
+  <ConnectAccountButton
+    appName="BigCommerce"
+    authorizeUrl="https://workflow.appse.ai/credentials?appCode=bigcommerce&credentialTypeCode=bigcommerce_oauth2_public"
+  />
+
+  Click **Connect your BigCommerce Account** above to open the Public App authorization page and start the OAuth connection. If you are not signed in to appse ai, you will be prompted to log in or register first.
 
   ### Required Fields
 
@@ -38,18 +46,6 @@ The following fields are required to authenticate your BigCommerce account:
    Example: `abc123`
 
 ### Add Credential in appse ai
-
-- Navigate to: https://workflow.appse.ai/
-- Log in to your existing account or register for a new account if needed.
-- From the dashboard, go to the Credentials section.
-- Click on Add Credentials.
-- Select BigCommerce from the list of available applications.
-
-<img src="/img/credentials/big-commerce/public/select_bigcommerce_app.png" alt="BigCommerce app selection screen" width="700"/>
-
-- Choose Authentication type Public App (Recommended).
-
-<img src="/img/credentials/big-commerce/public/select_bigcommerce_public_app.png" alt="BigCommerce app authentication type selection screen" width="700"/>
 
 - Enter your BigCommerce Store Hash.
 - Click Save & Authorize.

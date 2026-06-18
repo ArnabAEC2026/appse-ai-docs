@@ -6,6 +6,7 @@ slug: /app-integrations/zoho-crm/
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
+import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
 
 Zoho CRM is a cloud-based software that helps businesses manage their customer relationships, track sales, and automate various business processes. It enables companies to streamline their sales, marketing, and customer support efforts on a single platform.
 
@@ -37,17 +38,12 @@ Zoho CRM is a cloud-based software that helps businesses manage their customer r
 
   ### Add Credential in appse ai
 
-  - Navigate to: https://workflow.appse.ai/
-  - Log in to your existing account or register for a new account if needed.
-  - From the dashboard, go to the Credentials section.
-  - Click on Add Credentials.
-  - Select Zoho CRM from the list of available applications.
-
-  <img src="/img/credentials/zoho-crm/public/select_zohocrm_app.png" alt="Zoho CRM app selection screen" width="700"/>
-
-  - Choose Authentication type Public App (Recommended).
-
-  <img src="/img/credentials/zoho-crm/public/select_zohocrm_public_app.png" alt="Zoho CRM public app authentication type selection screen" width="700"/>
+  <ConnectAccountButton
+    appName="Zoho CRM"
+    authorizeUrl="https://workflow.appse.ai/credentials?appCode=zohocrm&credentialTypeCode=zohocrm_oauth2_public"
+  />
+ 
+  Click **Connect your Zoho CRM Account** above to open the Public App authorization page and start the OAuth 2.0 flow  connection. If you are not signed in to appse ai, you will be prompted to log in or register first.
 
   - Select Domain from the dropdown.
 

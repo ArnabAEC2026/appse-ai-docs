@@ -1,6 +1,6 @@
 ﻿---
 title: "BigCommerce"
-slug: /app-integrations/bigcommerce
+slug: /app-integrations/bigcommerce/
 description: Step-by-step guide to set up BigCommerce credentials and automate e-commerce workflows in appse ai.
 ---
 
@@ -73,8 +73,6 @@ The following fields are required to authenticate your BigCommerce account:
 </TabItem>
 
 <TabItem value="Private App" label="Private App">
-
-## Setup Credential
 
 Follow the steps below to quickly set up your credential.
 

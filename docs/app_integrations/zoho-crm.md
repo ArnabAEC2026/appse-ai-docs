@@ -8,18 +8,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
 
-Zoho CRM is a cloud-based software that helps businesses manage their customer relationships, track sales, and automate various business processes. It enables companies to streamline their sales, marketing, and customer support efforts on a single platform.
-
----
-
-### Key Features:
-- **Lead and Contact Management**: Track and manage leads, contacts, and accounts.
-- **Sales Automation**: Automate routine tasks, such as follow-ups and data entry.
-- **Customizable Dashboards**: Visualize and analyze your sales pipeline and performance.
-- **Reports and Analytics**: Gain insights into sales trends and customer behaviors.
-- **Integrations**: Connect seamlessly with other Zoho apps and third-party tools.
-
----
+**Zoho CRM** is a cloud-based software that helps businesses manage customer relationships, track sales, and automate business processes. It enables organizations to efficiently manage leads, contacts, and accounts, automate routine sales activities, and gain visibility into performance through customizable dashboards and analytics. Zoho CRM also integrates with other Zoho apps and third-party tools, helping businesses streamline sales, marketing, and customer support from a single platform.
 
 <Tabs>
   <TabItem value="Public App" label="Public App (Recommended)">
@@ -74,8 +63,6 @@ Zoho CRM is a cloud-based software that helps businesses manage their customer r
   </TabItem>
 
   <TabItem value="Private App" label="Private App">
-
-  ## Setup Credential
 
   To get started with Zoho CRM, you need to set credentials for it. Click on 'Select a credential' to create a new credential.
 

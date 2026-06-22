@@ -18,7 +18,7 @@ Shopify is a powerful e-commerce platform that enables businesses to build, cust
 <Tabs>
   <TabItem value="oauth2" label="OAuth 2.0" default>
 
-## Setup Credential — OAuth 2.0
+## Setup Credential
 
 Follow the steps below to connect your Shopify store to appse ai using OAuth 2.0. This method uses a **Client ID** and **Client Secret** obtained from the Shopify Dev Dashboard.
 
@@ -112,7 +112,9 @@ https://embedded-ui.appse.ai/oauth-callback.html
 ```
 <img src="/img/credentials/shopify/s8.png" alt="Redirect URL section" width="700"/>
 
-> ⚠️ Make sure the URL is entered **exactly** as shown in credential form, including `https://`. This URL is required for appse ai to complete the OAuth 2.0 authorization flow.
+:::note
+Make sure the URL is entered **exactly** as shown in credential form, including `https://`. This URL is required for appse ai to complete the OAuth 2.0 authorization flow.
+:::
 
 ---
 
@@ -139,7 +141,9 @@ You will see:
 - **Client Secret** — Click the copy button next to it.
 <img src="/img/credentials/shopify/s12.png" alt="Copy Client ID and Client Secret" width="700"/>
 
-> ⚠️ Store both values securely. You will need them to complete the credential setup in appse ai.
+:::caution
+Store both values securely. You will need them to complete the credential setup in appse ai.
+:::
 
 ---
 
@@ -188,7 +192,7 @@ You will see:
   </TabItem>
     <TabItem value="api-key" label="API Key">
 
-## Setup Credential — API Key
+## Setup Credential
 
 Follow the steps below to quickly set up your Shopify credential using an Admin API Access Token.
 
@@ -280,7 +284,9 @@ In the **API credentials** tab, your Admin API Access Token will be displayed.
 
 Click the **"Reveal token once"** button. Copy the token and store it somewhere secure — you will **not** be able to see it again.
 
-> ⚠️ **Important:** The Admin API Access Token is shown **only once**. If you lose it, you will have to create a new custom app.
+:::caution
+The Admin API Access Token is shown **only once**. If you lose it, you will have to create a new custom app.
+:::
 
 ---
 

@@ -130,7 +130,7 @@ Every application has a pre-defined set of triggers and actions. Here is the cur
 
 #### New Order Created
 
-Triggers when a new order is created in EBay. Use this to automate order processing, fulfilment, and notifications.
+Triggers when a new order is created in EBay. Use this to automate order processing, fulfillment, and notifications.
 
 ##### Select Credentials and Trigger Event
 

@@ -85,7 +85,7 @@ import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
   <img src="/img/credentials/zoho-crm/base_api_url.png" alt="base api url" width="700"/>
   <img src="/img/credentials/zoho-crm/base_api_url_format.png" alt="base api url dropdown" width="700"/>
 
-  ## How to Get Client ID and Client Secret
+  ### How to Get Client ID and Client Secret
 
   ### Step 1: Access Zoho CRM
   Sign in to your [Zoho CRM account](https://www.zoho.com/crm/login.html)
@@ -129,7 +129,7 @@ import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
 
   ### Step 7: Configure Application
   1. Write 'App name' and 'Homepage URL'
-  2. Copy 'Callback API URL' from appse.ai's Zoho CRM credential form
+  2. Copy 'Callback API URL' from appse ai Zoho CRM credential form
   3. Paste it in 'Authorized Redirect URIs'
   4. Click 'Create' after filling in all fields
 
@@ -142,7 +142,7 @@ import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
   <img src="/img/credentials/zoho-crm/copy_client_id_secret.png" alt="copy client id and secret" width="700"/>
 
   ### Step 9: Paste Credentials
-  Paste the credentials in appse.ai's Zoho CRM credential form:
+  Paste the credentials in appse ai Zoho CRM credential form:
 
   <img src="/img/credentials/zoho-crm/paste_client_id_secret.png" alt="paste client id and client secret" width="700"/>
 
@@ -155,10 +155,10 @@ import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
 
   <img src="/img/credentials/zoho-crm/ok_multi_dc.png" alt="ok multi dc" width="700"/>
 
-  ## Final Authorization
+  ### Final Authorization
 
   ### Step 11: Save and Authorize
-  Go to appse.ai's [credential page](https://workflow.appse.ai/credentials) and select Zoho CRM's credential. Click on 'Save & Authorise' to continue:
+  Go to appse ai [credential page](https://workflow.appse.ai/credentials) and select Zoho CRM's credential. Click on 'Save & Authorise' to continue:
 
   <img src="/img/credentials/zoho-crm/save_authorise.png" alt="save & authorize" width="700"/>
 
@@ -167,7 +167,7 @@ import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
 
   <img src="/img/credentials/zoho-crm/accept_allow.png" alt="accept & allow" width="700"/>
 
-  ## Completion
+  ### Completion
 
 If you followed all the steps correctly, your Zoho CRM credential should be successfully saved.
 

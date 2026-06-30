@@ -2,6 +2,7 @@
 title: "BigCommerce"
 slug: /app-integrations/bigcommerce/
 description: Step-by-step guide to set up BigCommerce credentials and automate e-commerce workflows in appse ai.
+unlisted: true
 ---
 
 import Tabs from '@theme/Tabs';
@@ -21,7 +22,7 @@ BigCommerce is a leading e-commerce platform that helps businesses create and ma
 
   <ConnectAccountButton
     appName="BigCommerce"
-    authorizeUrl="https://workflow.appse.ai/credentials?appCode=bigcommerce&credentialTypeCode=bigcommerce_oauth2_public"
+    authorizeUrl="https://reimagine.insync.pro/credentials?appCode=bigcommerce&credentialTypeCode=bigcommerce_oauth2_public"
   />
 
   Click **Connect your BigCommerce Account** above to open the Public App authorization page and start the OAuth connection. If you are not signed in to appse ai, you will be prompted to log in or register first.

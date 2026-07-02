@@ -1,10 +1,10 @@
 import Link from '@docusaurus/Link';
-
+ 
 type ConnectAccountButtonProps = {
   appName: string;
   authorizeUrl: string;
 };
-
+ 
 export default function ConnectAccountButton({
   appName,
   authorizeUrl,

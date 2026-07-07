@@ -13,21 +13,18 @@ BigCommerce is a leading e-commerce platform that helps businesses create and ma
 
 ---
 
-<Tabs>
-  <TabItem value="Public App" label="Public App (Recommended)">
+:::note
+BigCommerce Marketplace installations use OAuth 2.0 authentication only. Install and connect the app directly through the OAuth flow. Only the Store Hash is required to identify and connect your BigCommerce store.
+:::
 
-  :::note
-  BigCommerce Marketplace installations use OAuth 2.0 authentication only. Install and connect the app directly through the OAuth flow. Only the Store Hash is required to identify and connect your BigCommerce store.
-  :::
+<ConnectAccountButton
+  appName="BigCommerce"
+  authorizeUrl="https://workflow.insync.top/credentials?appCode=bigcommerce&credentialTypeCode=bigcommerce_oauth2_public"
+/>
 
-  <ConnectAccountButton
-    appName="BigCommerce"
-    authorizeUrl="https://reimagine.insync.pro/credentials?appCode=bigcommerce&credentialTypeCode=bigcommerce_oauth2_public"
-  />
+Click **Connect your BigCommerce Account** above to open the Public App authorization page and start the OAuth connection. If you are not signed in to appse ai, you will be prompted to log in or register first.
 
-  Click **Connect your BigCommerce Account** above to open the Public App authorization page and start the OAuth connection. If you are not signed in to appse ai, you will be prompted to log in or register first.
-
-  ### Required Fields
+### Required Fields
 
 The following fields are required to authenticate your BigCommerce account:
 
@@ -70,97 +67,6 @@ The following fields are required to authenticate your BigCommerce account:
 <img src="/img/credentials/big-commerce/public/confirm_install.png" alt="BigCommerce app install confirmation screen" width="700"/>
 
 - Once connected, you will be automatically redirected back to appse ai platform and the BigCommerce credential will be saved.
-
-</TabItem>
-
-<TabItem value="Private App" label="Private App">
-
-Follow the steps below to quickly set up your credential.
-
-### Required Fields
-
-The following fields are required to authenticate your BigCommerce account:
-
-| Field        | Description                                      |
-|----|----|
-| Store Hash   | Unique identifier for your BigCommerce store     |
-| API Token    | Token used to authenticate API requests          |
-
-### Step-by-Step Guide
-
-#### 1. Find Your Store Hash
-
-- Log in to your BigCommerce admin dashboard.  
-- In your browser's address bar, you will see a URL like:  
-   `https://store-abc123.mybigcommerce.com/manage/dashboard`
-
-<img src="/img/credentials/big-commerce/bigcommerce-cred-store-hash.png" alt="appse ai BigCommerce Store Hash" width="700"/>
-
-- The value after `store-` is your **Store Hash**.  
-   Example: `abc123`
-
-#### 2. Generate Your Access Token
-
-- Navigate to **Settings** -> **Store-level API accounts** -> Click **Create API Account**.
-
-<img src="/img/credentials/big-commerce/bigcommerce-cred-access-token-1.png" alt="appse ai BigCommerce Store Level API Accounts" width="700"/>
-
-<img src="/img/credentials/big-commerce/bigcommerce-cred-access-token-2.png" alt="appse ai BigCommerce Store Create API Account" width="700"/>
-
-- Enter a **Name** and select the required **OAuth scopes**.
-
-Here is a recommended table for the required OAuth scopes:
-
-| OAuth Scope                                       | Access     |
-|----|----|
-| Content                                           | None       |
-| Checkout Content                                 | None       |
-| Customers                                         | modify     |
-| Customers login                                 | None       |
-| Information & settings                           | None       |
-| Marketing                                         | None       |
-| Orders                                            | modify     |
-| Order transactions                               | modify     |
-| Create payments                                  | create     |
-| Get Payment methods                              | read-only  |
-| Stored Payment Instruments                       | None       |
-| Products                                          | modify     |
-| Themes                                            | None       |
-| Carts                                             | None       |
-| Checkouts                                         | None       |
-| Sites & routes                                   | None       |
-| Channel settings                                 | None       |
-| Channel listings                                 | None       |
-| Storefront API tokens                            | None       |
-| Storefront API customer impersonation tokens     | None       |
-| Store Locations                                  | modify     |
-| Store Inventory                                  | modify     |
-| Fulfillment Methods                              | modify     |
-| Order Fulfillment                                | modify     |
-| Metafield Ownership                              | None       |
-| Metafields Access                                | full       |
-
-
-- Click **Save** to generate the token.
-
-<img src="/img/credentials/big-commerce/bigcommerce-cred-access-token-3.png" alt="appse ai BigCommerce Save API" width="700"/>
-
-- Copy and securely store the **Access Token** — it will not be shown again.
-
-<img src="/img/credentials/big-commerce/bigcommerce-cred-access-token-4.png" alt="appse ai BigCommerce Access Token" width="700"/>
-
-You will now have your **Access Token** for use within the appse ai platform.
-
-### Test Your Credential
-
-Once both **Store Hash** and **API Token** are entered into the credential form, use the **Save** button to store your configurations.
-
-- If successful, your BigCommerce integration will be ready to use.
-- If unsuccessful, try the following solutions:
-   * Ensure your Store Hash and token are correct and that the scopes are properly set.
-   * Ensure that your API token has the required scope for the Customers endpoint. Missing or insufficient permissions may result in authentication or data access errors. Refer to the OAuth scope recommendation table above.
-</TabItem>
-</Tabs>
 
 ---
 
@@ -573,7 +479,7 @@ The configuration fields are the same for all triggers — refer to the screensh
   </TabItem>
   <TabItem value="actions" label="Actions">
 
-## Actions
+### Actions
 
 ### Customer Actions
 

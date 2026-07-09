@@ -2,6 +2,7 @@
 title: Gmail
 description: Step-by-step guide to set up Gmail credentials for Appse.ai integration
 slug: /app-integrations/gmail/
+unlisted: true
 ---
 
 import ConnectAccountButton from '@site/src/components/ConnectAccountButton';
@@ -56,6 +57,25 @@ Click **Connect your Gmail Account** above to open the Public App authorization 
 - Ensure the credential shows **Successfully Validated**.
 
 <img src="/img/credentials/gmail/gm51.png" alt="Gmail credential successfully validated" width="700"/>
+
+---
+
+## Triggers and Actions
+
+Here is a list of the available actions for Gmail:
+
+### Actions
+
+---
+
+- **Send Email** — Send an email using the Gmail API.
+- **Reply to Email** — Send a reply to an existing email message in Gmail, keeping the reply within the same conversation thread.
+- **Get Mail message attachment** — Retrieve a specific attachment from an email message in the user's Gmail account.
+- **Modify Gmail Message Set as Read** — Modify a Gmail message (for example, mark as read/unread, or add/remove labels).
+- **Get Mail messages unread** — Retrieve unread emails from the user's Gmail account.
+- **Get mail message details** — Retrieve detailed information about a specific email message from the user's Gmail account.
+- **Search mail message** — Search and retrieve mail messages from the user's Gmail account using a filter query.
+- **Get unread Email received in last 24 hours** — Retrieve unread emails that arrived in the user's Gmail account within the last 24 hours.
 
 ---
 

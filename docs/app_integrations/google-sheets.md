@@ -54,12 +54,15 @@ Click **Connect your Google Sheets Account** above to open the Public App author
 
 ---
 
-## Google Sheet Actions
-1. Get Rows from Google Sheet
-2. Create New Sheet in Spreadsheet
-3. Append Row to Google Sheet
-4. Update Row in Google Sheet
-5. Create new Spreadsheet
+## Actions
+
+| Action | Description |
+| ------ | ----------- |
+| **Get Rows from Google Sheet** | Retrieves data from a specified range in a Google Sheet and returns each row as a structured object. |
+| **Create New Sheet in Spreadsheet** | Creates a new sheet (tab) inside an existing Google Spreadsheet. |
+| **Append Row to Google Sheet** | Adds a new row of data to an existing Google Sheet without affecting existing rows. |
+| **Update Row in Google Sheet** | Updates an existing row by matching a specific value in a chosen column and then updating one or more column values in that row. |
+| **Create new Spreadsheet** | Creates a brand-new Google Spreadsheet directly from your workflow. |
 
 ## Common Setup
 
@@ -89,7 +92,9 @@ Copy this value and paste it into the Spreadsheet ID field in the action configu
 
 The **Get Rows from Google Sheet** action retrieves data from a specified range in a Google Sheet and returns each row as a structured object.  
 This action is commonly used to **read spreadsheet data**, **fetch records**, or **use Google Sheets as a data source** in workflows.
-> **Note:** Regardless of the configured Start Cell and End Cell, the first row of the spreadsheet is always treated as the header row. The column names in this row are used as the JSON field names in the output array of objects.
+:::note
+Regardless of the configured Start Cell and End Cell, the first row of the spreadsheet is always treated as the header row. The column names in this row are used as the JSON field names in the output array of objects.
+:::
 
 ---
 
@@ -128,7 +133,9 @@ This action is commonly used to **initialize data structures**, **generate repor
 | Select Spreadsheet | Select the required spreadsheet from the dropdown where the new sheet will be created |
 | Sheet Name | The name of the new sheet (tab) to be created. This field appears dynamically after adding an item under **Sheet Creation Requests** |
 
-> **Note:** You can create multiple sheets by adding multiple items under Sheet Creation Requests.
+:::note
+You can create multiple sheets by adding multiple items under Sheet Creation Requests.
+:::
 
 ---
 

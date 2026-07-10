@@ -1,7 +1,7 @@
 ---
 title: "Google Sheets"
 description: Step-by-step guide to set up Google Sheets credentials and automate spreadsheet workflows in appse ai.
-slug: /app-integrations/googlesheets
+slug: /app-integrations/googlesheets/
 unlisted: true
 ---
 

@@ -78,7 +78,10 @@ Click **"Build apps in Dev Dashboard"**.
 
 #### Step 5: Create a New App
 
-In the Dev Dashboard, click **"Create app"** from the top-right section.
+In the Dev Dashboard, click **Create app**. For the first app creation, the **Create app** link is displayed in the bottom-right section
+<img src="/img/credentials/shopify/s20.png" alt="Create first app button" width="700"/>
+
+If any app pre-exists, the **Create app** button to create another app is displayed in the top-right section.
 <img src="/img/credentials/shopify/s5.png" alt="Create app button" width="700"/>
 
 You will see the **"Start from Dev Dashboard"** section.
@@ -97,7 +100,12 @@ In the **App URL** field, no modification is required since this app is intended
 #### Step 7: Configure API Scopes
 
 Go to the **Admin API scope configuration** section.
-Select the scopes relevant to the APIs you want to use — such as customer, order, or product scopes — then **Save** the configuration. You can also use the default scopes displayed in the Shopify Credential form in appse ai platform.
+Select the scopes relevant to the APIs you want to use — such as customer, order, or product scopes — then **Save** the configuration.
+
+:::note
+Add all scopes relevant to the actions and triggers you plan to use in your workflows. After the credential is validated in appse ai, the scopes configured here in the Shopify Dev Dashboard overwrite the scopes in the **API Access Scope** field in the Shopify OAuth credential form. Those scopes are then used for workflow execution. By default, the scopes displayed in the **API Access Scope** field in appse ai are: `read_customers`, `write_customers`, `read_orders`, `write_orders`, `read_products`, `write_products`, `read_all_orders`. After authorization, these scopes are overwritten by the actual scopes that are configured in your shopify app.
+:::
+
 <img src="/img/credentials/shopify/s7.png" alt="Select scopes options" width="700"/>
 
 ---

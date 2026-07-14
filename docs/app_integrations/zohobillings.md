@@ -84,6 +84,7 @@ Here is a list of the available actions for Zoho Billing:
 | ------ | ----------- |
 | **Get Record by ID** | Retrieves the details of a specific record in Zoho Billing. Requires the **Record ID** of the record to be fetched and returns its complete details. |
 | **Get Subscriptions** | Retrieves a list of all subscription records available in your Zoho Billing organisation. Supports optional filters to refine the results. |
+| **Get Invoices** | Retrieves a list of all invoices available in your Zoho Billing organisation. Supports optional filters based on invoice status. |
 
 ## Support
 

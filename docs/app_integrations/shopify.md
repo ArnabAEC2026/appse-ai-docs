@@ -2052,7 +2052,7 @@ The configuration fields are the same for all triggers — refer to the screensh
 
 <TabItem value="actions" label="Actions">
 
-## Actions
+### Actions
 
 ### Customers Actions
 

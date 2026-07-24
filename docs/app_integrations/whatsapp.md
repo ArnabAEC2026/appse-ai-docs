@@ -181,8 +181,6 @@ In appse ai, that is handled by attaching a Webhook Verification credential to a
 Verification is optional. Webhooks without it keep existing POST-only behaviour. For WhatsApp, you should always enable it so Meta can register the URL and forged events are rejected.
 :::
 
-### Step-by-Step Guide
-
 ### Add WhatsApp Webhook (Meta Cloud API) Credential in appse ai
 
 #### Required Fields
@@ -194,13 +192,13 @@ You'll be asked to fill in the following details:
 | Verify Token         | A token you set when subscribing the webhook in Meta; matched during the GET verification handshake                    |
 | App Secret      | Your Meta App Secret from the Meta Developer Console; used to validate inbound webhook signatures (HMAC over the raw body)                |
 
-1. Navigate to [workflow.appse.ai](https://workflow.appse.ai/) → **Credentials** → **Add Credentials** → **WhatsApp** -> Select **WhatsApp Webhhook (Meta Cloud API)** authentication type
+1. Navigate to [workflow.appse.ai](https://workflow.appse.ai/) → **Credentials** → **Add Credentials** → **WhatsApp** → Select **WhatsApp Webhook (Meta Cloud API)** authentication type
 
 <img src="/img/credentials/whatsapp/webhook_verification/choose_authentication_type.png" alt="Choose Authentication screen" width="700"/>
 
 2. Provide **Verify Token** and **App Secret** → Click on **Save**
 
-<img src="/img/credentials/whatsapp/webhook_verification/verify_token_app_secret_click_save.png" alt="Cofigure Credentials screen" width="700"/>
+<img src="/img/credentials/whatsapp/webhook_verification/verify_token_app_secret_click_save.png" alt="Configure Credentials screen" width="700"/>
 
 ### Webhook Node Configuration
 

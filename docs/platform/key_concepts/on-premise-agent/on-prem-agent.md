@@ -52,7 +52,7 @@ Confirm each item below on the target machine before running the installer.
 | Not supported | Windows 7 / 8 / 8.1 |
 
 :::warning
-Windows Server 2012 R2 cannot natively negotiate the modern TLS cipher suites (ECDHE+GCM) required by the appse ai gateway. A compatibility proxy (for example, stunnel) is required on this OS. Contact your appse ai representative for the compatibility runbook.
+Windows Server 2012 R2 cannot natively negotiate the modern TLS cipher suites (ECDHE+GCM) required by the appse ai gateway.
 :::
 
 ---
@@ -108,24 +108,24 @@ Time drift can cause TLS handshake and authentication token failures.
 
 ---
 
-### Step 2: Open the On-Prem Connectors Creation Screen
+### Step 2: Open the On-premise connectors Creation Screen
 
-The **On-Prem Connectors** page displays all available connectors for your organization.
+The **On-premise connectors** page displays all available connectors for your organization.
 
 If no connectors are available, the empty state screen is displayed.
 
-- Click **Create First Connector** or **Create Connector**
+- Click **Create connector**
 
 <img src="/img/platform/key-concepts/on-premise-agent/create-on-prem-connectors.png" alt="Create On-Prem Connector" width="700"/>
 
 ---
 
-### Step 3: Configure the On-Prem Connector
+### Step 3: Configure the On-premise connector
 
-In the **Create On-Prem Connector** popup:
+In the **Create on-premise connector** popup:
 
 - Enter a unique **Connector Name**
-- Click **Create Connector**
+- Click **Create**
 
 <img src="/img/platform/key-concepts/on-premise-agent/click-on-create-connector.png" alt="Create On-Prem Connector Popup" width="700"/>
 

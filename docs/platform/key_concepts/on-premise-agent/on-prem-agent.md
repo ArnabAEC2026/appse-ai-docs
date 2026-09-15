@@ -10,9 +10,9 @@ The On-Prem Connector in appse ai enables secure communication between your on-p
 
 With the On-Prem Connector, you can:
 
-- Securely connect on-premise applications
-- Execute workflows against on-premise environments
-- Monitor and manage agent connectivity directly from appse ai
+- Securely connect on-premise applications.
+- Execute workflows against on-premise environments.
+- Monitor and manage agent connectivity directly from appse ai.
 
 ---
 
@@ -20,10 +20,10 @@ With the On-Prem Connector, you can:
 
 Before creating an On-Prem Connector, ensure that:
 
-- You have access to the appse ai portal
-- Your organization has permission to create On-Prem Connectors
-- Required on-prem plugins are available for your organization
-- The target machine has internet connectivity
+- You have access to the appse ai portal.
+- Your organization has permission to create On-Prem Connectors.
+- Required on-prem plugins are available for your organization.
+- The target machine has internet connectivity.
 
 ---
 
@@ -39,8 +39,7 @@ Confirm each item below on the target machine before running the installer.
 |---|---|
 | Recommended | Windows Server 2019 or Windows Server 2022 |
 | Minimum supported | Windows Server 2016 |
-| Supported with limitations | Windows Server 2012 R2 — TLS cipher compatibility shim required for gateway connectivity |
-| Not supported | Windows Server 2008 / 2008 R2 |
+| Not supported | Windows Server 2008 / 2008 R2 / 2012 / 2012 R2 |
 
 ##### Client OS
 
@@ -48,12 +47,7 @@ Confirm each item below on the target machine before running the installer.
 |---|---|
 | Recommended | Windows 11 |
 | Minimum supported | Windows 10 (version 1703 or later) |
-| Supported with limitations | Windows 10 (builds prior to 1703) — TLS cipher compatibility shim required for gateway connectivity |
-| Not supported | Windows 7 / 8 / 8.1 |
-
-:::warning
-Windows Server 2012 R2 cannot natively negotiate the modern TLS cipher suites (ECDHE+GCM) required by the appse ai gateway.
-:::
+| Not supported | Windows 7 / 8 / 8.1 / 10 (builds prior to 1703) |
 
 ---
 
@@ -69,30 +63,25 @@ Windows Server 2012 R2 cannot natively negotiate the modern TLS cipher suites (E
 
 #### Software Dependencies
 
-- .NET Framework 4.8 or later
-- TLS 1.2 enabled at the OS level (TLS 1.0 / 1.1 disabled per security baseline)
-- Local administrator rights for installation
-- Dedicated service account with the required database and network permissions for runtime operation
-- System clock synchronized via NTP
-
-:::info
-Time drift can cause TLS handshake and authentication token failures.
-:::
+- .NET Framework 4.8 or later.
+- TLS 1.2 enabled at the OS level (TLS 1.0 / 1.1 disabled per security baseline).
+- Local administrator rights for installation.
+- Dedicated service account with the required database and network permissions for runtime operation.
+- System clock synchronized via NTP.
 
 ---
 
 #### Network
 
-- Outbound HTTPS (port 443) access to the appse ai gateway endpoint
-- Firewall allowlist entry for the gateway domain or IP if outbound traffic is restricted
-- No inbound ports required — the agent initiates outbound connections only
+- Outbound HTTPS (port 443) access to the appse ai gateway endpoint (*.appse.ai)
+- Firewall allowlist entry for the gateway domain or IP if outbound traffic is restricted.
 
 ---
 
 #### Compliance and Security
 
-- Antivirus exclusion recommended for the agent install directory (for performance only — not a bypass of scanning policy)
-- If corporate SSL inspection or proxy is in use, the appse ai gateway certificate must be trusted or excluded from inspection
+- Antivirus exclusion recommended for the agent install directory.
+- If corporate SSL inspection or proxy is in use, the appse ai gateway certificate must be trusted or excluded from inspection.
 
 ---
 

@@ -162,7 +162,7 @@ Once the agent is created successfully:
 
 ### Step 5: View the Created On-Prem Connector
 
-After closing the popup, the newly created agent is displayed in the On-Site Connector page.
+After closing the popup, the newly created agent is displayed in the On-premise connectors page.
 
 - The agent status is displayed as **Offline**
 
